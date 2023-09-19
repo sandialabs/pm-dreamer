@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle>
+  <Evolver>
+    <BootStrapSet>
+      <IfThenElseOp parameter="ms.restart.file" value="">
+        <PositiveOpSet>
+          <GP-InitFullOp/>
+          <PairPotentialOp/>
+          <GP-StatsCalcFitnessSimpleOp/>
+        </PositiveOpSet>
+        <NegativeOpSet>
+          <MilestoneReadOp/>
+        </NegativeOpSet>
+      </IfThenElseOp>
+      <TermMaxGenOp/>
+      <TermMaxFitnessOp fitness="1.0"/>
+    </BootStrapSet>
+   </Evolver>
+  <Register>
+    <Entry key="ec.pop.size">10000000</Entry>
+    <Entry key="ec.term.maxgen">0</Entry>
+    <Entry key="gp.init.mindepth">4</Entry>
+    <Entry key="gp.init.maxdepth">4</Entry>
+  </Register>
+</Beagle>

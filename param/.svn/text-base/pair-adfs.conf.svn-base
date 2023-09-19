@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.0">
+  <!-- Created by a configuration dump -->
+  <!-- Evolver: configuration of the algorithm -->
+  <Evolver>
+    <BootStrapSet>
+      <IfThenElseOp parameter="ms.restart.file" value="">
+        <PositiveOpSet>
+          <GP-InitHalfConstrainedOp/>
+          <EnergyOp/>
+        </PositiveOpSet>
+        <NegativeOpSet>
+          <RestartReadOp/>
+        </NegativeOpSet>
+      </IfThenElseOp>
+      <IndividualSizeFrequencyStatsOp/>
+      <GP-PrimitiveUsageStatsOp/>
+      <TermMaxGenOp/>
+      <TermMaxFitnessOp fitness="1"/>
+      <DreamerOp/>
+      <MilestoneWriteOp/>
+    </BootStrapSet>
+    <MainLoopSet>
+      <SelectTournamentOp/>
+      <GP-CrossoverConstrainedOp/>
+      <GP-MutationStandardConstrainedOp/>
+      <GP-MutationShrinkConstrainedOp/>
+      <GP-MutationSwapConstrainedOp/>
+      <GP-MutationSwapSubtreeConstrainedOp/>
+      <GP-SimplifyOp/>
+      <GP-HybridOptOp/>
+      <EnergyOp/>
+      <MigrationMPIOp/>
+      <IndividualSizeFrequencyStatsOp/>
+      <GP-PrimitiveUsageStatsOp/>
+      <TermMaxGenOp/>
+      <TermMaxFitnessOp/>
+      <TermMaxTimeOp/>
+      <DreamerOp/>
+      <MilestoneWriteOp/>
+    </MainLoopSet>
+  </Evolver>
+  <!-- System: setting of the evolution -->
+  <System>
+  <PrimitiveSuperSet>
+    <PrimitiveSet>
+      <Primitive name="ADD" bias="1"/>
+      <Primitive name="SUB" bias="1"/>
+      <Primitive name="MUL" bias="1"/>
+      <Primitive name="DIV" bias="1"/>
+      <Primitive name="POW" bias="1"/>
+      <Primitive name="EXP" bias="1"/>
+      <Primitive name="LOG" bias="1"/>
+      <Primitive name="ABS" bias="1"/>
+      <Primitive name="ADF" bias="1"/>
+      <Primitive name="X"   bias="1"/>
+      <Primitive name="E_d" bias="1"/>
+      <Primitive name="ARG" bias="1"/>
+<!--  <Primitive name="E_p" bias="1"/> Uncomment w multiple particle types -->
+<!--  <Primitive name="E_t" bias="1"/> Uncomment w 3-body multiple types -->
+<!--  <Primitive name="R1"  bias="1"/> Uncomment for 3-body -->
+<!--  <Primitive name="R2"  bias="1"/> Uncomment for 3-body -->
+<!--  <Primitive name="A"   bias="1"/> Uncomment for 3-body -->
+    </PrimitiveSet>
+  </PrimitiveSuperSet>
+  <Register>
+    <Entry key="ec.pop.size">500</Entry>
+    <Entry key="ec.repro.prob">0.1</Entry>
+    <Entry key="ec.sel.tournsize">7</Entry>
+    <Entry key="ec.term.maxgen">200</Entry>
+    <Entry key="ec.term.maxfitness">1.0</Entry>
+    <Entry key="ec.term.maxtime">120</Entry>
+    <Entry key="ec.mig.mpi_interval">2</Entry>
+    <Entry key="ec.mig.mpi_size">5</Entry>
+    <Entry key="gp.cx.distrpb">0.9</Entry>
+    <Entry key="gp.cx.indpb">0.9</Entry>
+    <Entry key="gp.init.mindepth">3</Entry>
+    <Entry key="gp.init.maxdepth">4</Entry>
+    <Entry key="gp.mutshrink.indpb">0.05</Entry>
+    <Entry key="gp.mutstd.indpb">0.05</Entry>
+    <Entry key="gp.mutstd.maxdepth">5</Entry>
+    <Entry key="gp.mutswap.indpb">0.05</Entry>
+    <Entry key="gp.tree.maxdepth">4</Entry>
+    <Entry key="gp.try">2</Entry>
+    <Entry key="ms.write.interval">100</Entry>
+    <Entry key="gp.hybopt.indpb">0.05</Entry>
+    <Entry key="gp.hybopt.primit">E_d</Entry>
+    <Entry key="gp.hybopt.type">0</Entry>
+    <Entry key="gp.hybopt.maxi">10</Entry>
+    <Entry key="gp.hybopt.simplify">1</Entry>
+    <Entry key="gp.tree.minargs">0/2</Entry>
+    <Entry key="gp.tree.maxargs">0/4</Entry>
+    <Entry key="gp.simplify.indpb">1.0</Entry>
+    <Entry key="gp.simplify.eps">1e-16</Entry>
+    <Entry key="gp.simplify.name">E_d</Entry>
+    <Entry key="gp.simplify.interval">20</Entry>
+    <Entry key="gp.simplify.maxe">20</Entry>
+    <Entry key="gp.olscorrect.name">E_d</Entry>
+  </Register>
+  </System>
+</Beagle>

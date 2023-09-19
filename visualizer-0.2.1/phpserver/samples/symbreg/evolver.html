@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html"/>
+    <title>BEAGLE Visualizer Report</title>
+  </head>
+  <body style="background-color: #F5F5F5" text="#000000" link="#4B66D0" vlink="#F09519" alink="#F09519"><br/>
+    <center><font color="#4B66D0" size="+5"><b><em>BEAGLE Visualizer</em></b></font></center><br/>
+    <center>&nbsp;&nbsp;[<a href="logs.html">Logs</a>]&nbsp;&nbsp;[<a href="stats.html">Statistics</a>]&nbsp;&nbsp;[<a href="vivarium.html">Vivarium</a>]&nbsp;&nbsp;[Evolver]&nbsp;&nbsp;[<a href="register.html">Register</a>]&nbsp;&nbsp;</center><br/><hr/>
+    <center><h2>Evolver</h2></center><br/>
+    <center>
+      <table border="0">
+        <td bgcolor="#CCCCDD">
+          <tt>&lt;Evolver&gt;<BR>
+&nbsp;&nbsp;&lt;BootStrapSet&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;IfThenElseOp&nbsp;parameter=&quot;ms.restart.file&quot;&nbsp;value=&quot;&quot;&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PositiveOpSet&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;GP-InitHalfOp&nbsp;repropb=&quot;ec.repro.prob&quot;/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;SymbRegEvalOp/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;GP-StatsCalcFitnessSimpleOp/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/PositiveOpSet&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;NegativeOpSet&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;MilestoneReadOp/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/NegativeOpSet&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/IfThenElseOp&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TermMaxGenOp/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TermMaxFitnessOp&nbsp;fitness=&quot;1&quot;/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;MilestoneWriteOp/&gt;<BR>
+&nbsp;&nbsp;&lt;/BootStrapSet&gt;<BR>
+&nbsp;&nbsp;&lt;MainLoopSet&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;SelectTournamentOp&nbsp;repropb=&quot;ec.repro.prob&quot;/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;GP-CrossoverOp&nbsp;distrpb=&quot;gp.cx.distrpb&quot;&nbsp;matingpb=&quot;gp.cx.indpb&quot;/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;GP-MutationStandardOp&nbsp;maxdepth=&quot;gp.mutstd.maxdepth&quot;&nbsp;mutationpb=&quot;gp.mutstd.indpb&quot;/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;GP-MutationShrinkOp&nbsp;mutationpb=&quot;gp.mutshrink.indpb&quot;/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;GP-MutationSwapOp&nbsp;distrpb=&quot;gp.mutswap.distrpb&quot;&nbsp;mutationpb=&quot;gp.mutswap.indpb&quot;/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;GP-MutationSwapSubtreeOp&nbsp;distrpb=&quot;gp.mutsst.distrpb&quot;&nbsp;mutationpb=&quot;gp.mutsst.indpb&quot;/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;SymbRegEvalOp/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;MigrationRandomRingOp/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;GP-StatsCalcFitnessSimpleOp/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TermMaxGenOp/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;TermMaxFitnessOp&nbsp;fitness=&quot;1&quot;/&gt;<BR>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;MilestoneWriteOp/&gt;<BR>
+&nbsp;&nbsp;&lt;/MainLoopSet&gt;<BR>
+&lt;/Evolver&gt;
+          </tt>
+        </td>
+      </table>
+    </center>
+    <br/><br/><hr/><br/>
+    <font size="2">Report generated on Aug 25 12:25:57 2004 by BEAGLE Visualizer v0.2<br/>Copyright (C) 2004 by Christian Gagn&eacute;, Patrick-Emmanuel Boulanger-Nadeau, and Vincent-Olivier Gravel</font><br/><br/><br/>
+  </body>
+</html>

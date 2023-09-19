@@ -1,0 +1,14 @@
+#!/bin/tcsh
+
+# Extract best fitnesses out of log files
+
+if ( $#argv < 1) then
+  echo "USAGE: get_tree obm_name1 obm_name2 ..."
+  echo "  where obm_name1, obm_name2, etc specify milestone"
+  echo "  files from Open Beagle."
+  exit(1);
+endif
+
+foreach pfile ($argv)
+	awk -v nam=$pfile:r 'BEGIN{ON=0}$1=="<HallOfFame"{ON=1}ON==1 && $1=="<Fitness"{printf "%s %s ",nam,$2}ON==1 && $1=="<Genotype"{printf "%s\n",$0; ON=0}$1=="</HallOfFame>"{ON=0}' $pfile | sed 's/type=\"simple\">//g' | sed 's/<\/Fitness>//g'
+end

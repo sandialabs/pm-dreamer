@@ -1,0 +1,110 @@
+#!/bin/tcsh
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run00.log -OBms.write.prefix=run00 -r 12348750
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run01.log -OBms.write.prefix=run01 -r 12348751
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run02.log -OBms.write.prefix=run02 -r 12348752
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run03.log -OBms.write.prefix=run03 -r 12348753
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run04.log -OBms.write.prefix=run04 -r 12348754
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run05.log -OBms.write.prefix=run05 -r 12348755
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run06.log -OBms.write.prefix=run06 -r 12348756
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run07.log -OBms.write.prefix=run07 -r 12348757
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run08.log -OBms.write.prefix=run08 -r 12348758
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run09.log -OBms.write.prefix=run09 -r 12348759
+
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run10.log -OBms.write.prefix=run10 -r 12348760
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run11.log -OBms.write.prefix=run11 -r 12348761
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run12.log -OBms.write.prefix=run12 -r 12348762
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run13.log -OBms.write.prefix=run13 -r 12348763
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run14.log -OBms.write.prefix=run14 -r 12348764
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run15.log -OBms.write.prefix=run15 -r 12348765
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run16.log -OBms.write.prefix=run16 -r 12348766
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run17.log -OBms.write.prefix=run17 -r 12348767
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run18.log -OBms.write.prefix=run18 -r 12348768
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run19.log -OBms.write.prefix=run19 -r 12348769
+
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run20.log -OBms.write.prefix=run20 -r 12348770
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run21.log -OBms.write.prefix=run21 -r 12348771
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run22.log -OBms.write.prefix=run22 -r 12348772
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run23.log -OBms.write.prefix=run23 -r 12348773
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run24.log -OBms.write.prefix=run24 -r 12348774
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run25.log -OBms.write.prefix=run25 -r 12348775
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run26.log -OBms.write.prefix=run26 -r 12348776
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run27.log -OBms.write.prefix=run27 -r 12348777
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run28.log -OBms.write.prefix=run28 -r 12348778
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run29.log -OBms.write.prefix=run29 -r 12348779
+
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run30.log -OBms.write.prefix=run30 -r 12348780
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run31.log -OBms.write.prefix=run31 -r 12348781
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run32.log -OBms.write.prefix=run32 -r 12348782
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run33.log -OBms.write.prefix=run33 -r 12348783
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run34.log -OBms.write.prefix=run34 -r 12348784
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run35.log -OBms.write.prefix=run35 -r 12348785
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run36.log -OBms.write.prefix=run36 -r 12348786
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run37.log -OBms.write.prefix=run37 -r 12348787
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run38.log -OBms.write.prefix=run38 -r 12348788
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run39.log -OBms.write.prefix=run39 -r 12348789
+
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run40.log -OBms.write.prefix=run40 -r 12348790
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run41.log -OBms.write.prefix=run41 -r 12348791
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run42.log -OBms.write.prefix=run42 -r 12348792
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run43.log -OBms.write.prefix=run43 -r 12348793
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run44.log -OBms.write.prefix=run44 -r 12348794
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run45.log -OBms.write.prefix=run45 -r 12348795
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run46.log -OBms.write.prefix=run46 -r 12348796
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run47.log -OBms.write.prefix=run47 -r 12348797
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run48.log -OBms.write.prefix=run48 -r 12348798
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run49.log -OBms.write.prefix=run49 -r 12348799
+
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run50.log -OBms.write.prefix=run50 -r 12348700
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run51.log -OBms.write.prefix=run51 -r 12348701
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run52.log -OBms.write.prefix=run52 -r 12348702
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run53.log -OBms.write.prefix=run53 -r 12348703
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run54.log -OBms.write.prefix=run54 -r 12348704
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run55.log -OBms.write.prefix=run55 -r 12348705
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run56.log -OBms.write.prefix=run56 -r 12348706
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run57.log -OBms.write.prefix=run57 -r 12348707
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run58.log -OBms.write.prefix=run58 -r 12348708
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run59.log -OBms.write.prefix=run59 -r 12348709
+
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run60.log -OBms.write.prefix=run60 -r 12348710
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run61.log -OBms.write.prefix=run61 -r 12348711
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run62.log -OBms.write.prefix=run62 -r 12348712
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run63.log -OBms.write.prefix=run63 -r 12348713
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run64.log -OBms.write.prefix=run64 -r 12348714
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run65.log -OBms.write.prefix=run65 -r 12348715
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run66.log -OBms.write.prefix=run66 -r 12348716
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run67.log -OBms.write.prefix=run67 -r 12348717
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run68.log -OBms.write.prefix=run68 -r 12348718
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run69.log -OBms.write.prefix=run69 -r 12348719
+
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run70.log -OBms.write.prefix=run70 -r 12348720
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run71.log -OBms.write.prefix=run71 -r 12348721
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run72.log -OBms.write.prefix=run72 -r 12348722
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run73.log -OBms.write.prefix=run73 -r 12348723
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run74.log -OBms.write.prefix=run74 -r 12348724
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run75.log -OBms.write.prefix=run75 -r 12348725
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run76.log -OBms.write.prefix=run76 -r 12348726
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run77.log -OBms.write.prefix=run77 -r 12348727
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run78.log -OBms.write.prefix=run78 -r 12348728
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run79.log -OBms.write.prefix=run79 -r 12348729
+
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run80.log -OBms.write.prefix=run80 -r 12348730
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run81.log -OBms.write.prefix=run81 -r 12348731
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run82.log -OBms.write.prefix=run82 -r 12348732
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run83.log -OBms.write.prefix=run83 -r 12348733
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run84.log -OBms.write.prefix=run84 -r 12348734
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run85.log -OBms.write.prefix=run85 -r 12348735
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run86.log -OBms.write.prefix=run86 -r 12348736
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run87.log -OBms.write.prefix=run87 -r 12348737
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run88.log -OBms.write.prefix=run88 -r 12348738
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run89.log -OBms.write.prefix=run89 -r 12348739
+
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run90.log -OBms.write.prefix=run90 -r 12348740
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run91.log -OBms.write.prefix=run91 -r 12348741
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run92.log -OBms.write.prefix=run92 -r 12348742
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run93.log -OBms.write.prefix=run93 -r 12348743
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run94.log -OBms.write.prefix=run94 -r 12348744
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run95.log -OBms.write.prefix=run95 -r 12348745
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run96.log -OBms.write.prefix=run96 -r 12348746
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run97.log -OBms.write.prefix=run97 -r 12348747
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run98.log -OBms.write.prefix=run98 -r 12348748
+$ROOT_DIR/bin/gp_force $ROOT_DIR/data/lj7.data -OBec.conf.file="$ROOT_DIR/param/pair7.conf" -OBlg.file.name=run99.log -OBms.write.prefix=run99 -r 12348749

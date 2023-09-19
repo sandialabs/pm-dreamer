@@ -1,0 +1,9 @@
+pair-adfs.conf             Automatically Defined Functions with Migration
+pair-ema.conf              EMA with Migration
+pair-generational.conf     Generational GP with Migration
+pair-hfc.conf              Hierachical Fair Competition (HCF) evolution.
+pair-hfc-serial.conf       Hierachical Fair Competition (HCF) evolution (Serial).
+pair-random.conf           No evolution, just random individuals
+pair-simple.conf           Simple GP Evolution with Migration
+pair-simple-serial.conf    Simple GP Evolution with Serial Random Ring Migration
+pair-steadystate.conf      Steady State with Migration

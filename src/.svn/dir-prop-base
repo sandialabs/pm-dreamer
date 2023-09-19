@@ -1,0 +1,6 @@
+K 13
+svn:externals
+V 63
+all svn+ssh://development.sandia.gov/usr/local/svn/wmbrown/all
+
+END

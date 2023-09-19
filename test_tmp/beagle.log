@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "beagle.log"</Log>
+    <Log>Reading evolver from file named "pair.conf"</Log>
+    <Log>Parsing command-line "/Users/athomps/netapp/codes/GP_MikeBrown/gp_force/bin/gp_force2 lj.data -OBec.conf.file=pair.conf -r 12348754"</Log>
+    <Log>Reading parameter file named "pair.conf"</Log>
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:21:14 12 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>Applying bootstrap operators to the 1st deme</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="200000">
+        <Item key="processed">200000</Item>
+        <Item key="total-processed">200000</Item>
+        <Measure id="fitness">
+          <Avg>0.307991</Avg>
+          <Std>0.304239</Std>
+          <Max>0.999924</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>3</Avg>
+          <Std>0</Std>
+          <Max>3</Max>
+          <Min>3</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>7</Avg>
+          <Std>0</Std>
+          <Max>7</Max>
+          <Min>7</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="200000">
+        <Item key="processed">200000</Item>
+        <Item key="total-processed">200000</Item>
+        <Measure id="fitness">
+          <Avg>0.307991</Avg>
+          <Std>0.304239</Std>
+          <Max>0.999924</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>3</Avg>
+          <Std>0</Std>
+          <Max>3</Max>
+          <Min>3</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>7</Avg>
+          <Std>0</Std>
+          <Max>7</Max>
+          <Min>7</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Maximum number of generations (0) termination criterion reached</Log>
+    <Log>Termination criterion reached</Log>
+    <Log>Current date and time: 16:21:27 12 Jun 2008</Log>
+    <Log>End of evolution</Log>
+  </Logger>
+</Beagle>

@@ -1,0 +1,100 @@
+
+========================  BEAGLE Visualizer README  =========================
+
+For BEAGLE Visualizer 0.2
+README written by Christian Gagne, August 25, 2004
+
+
+=============================================================================
+
+COMPILING THE BINARIES FROM THE SOURCES
+
+You can compile the binaries from the source code. On Unix, you simply
+need to do './configure; make clean; make' and get the binaries in
+directory 'visualizer/src'. For more details on Unix read file 'INSTALL'.
+On Windows, a MS Visual Studio .NET 2003 solution file is provided in
+directory 'visualizer/MSVCPP'.
+
+
+=============================================================================
+
+COMMAND-LINE TOOLS USAGE
+
+Binary 'beagleviz' is used to generate the reports themselves from Open
+BEAGLE XML files, while binary 'tree2svg' is used to generated standard
+tree representation of GP individuals. Command-line tools usages are the
+following:
+
+beagleviz [OPTIONS] XMLFILE1 [XMLFILE2 [XMLFILE3 ...]]
+
+  Options available are:
+  -o OUTPUT_DIR  Write HTML report is directory OUTPUT_DIR (default: '.')
+  -b URL         Set base URL of the Web interface
+                 (default: 'http://beagle.gel.ulaval.ca/visualizer')
+
+tree2svg [INPUTFILE [OUTPUTFILE]]
+
+  Where INPUTFILE is the input XML file to generate the SVG from, and
+  OUTPUTFILE is the output file to write SVG representation into. If
+  OUTPUTFILE is omitted, standard output is used and if INPUTFILE is
+  omitted, standard input is used.
+  
+
+=============================================================================
+
+INSTALLING A MIRROR OF THE WEB INTERFACE
+
+All the PHP/HTML files to set up a mirror of the Web interface are provided
+in directory 'phpserver'. On Unix, you can set an installation directory
+with the argument '--prefix=YOUR_INSTALL_DIR' to the 'configure' script,
+followed by 'make clean; make; make install' to install the binaries and
+PHP/HTML files for the Web interface. You must then activate an Apache Web
+server, mod_php and MySQL database. Once everything is set up, try
+opening the main page of the Web interface. If your configuration is
+correct, the system will ask you finalize the settings on an HTML form.
+
+During the set-up of the Apache server you may need to add the following
+line in file '/etc/mime.types', to enable correct SVG files support.
+
+image/svg+xml                   svg svgz
+
+
+=============================================================================
+
+USEFUL LINKS
+
+Open BEAGLE W3 Page
+http://beagle.gel.ulaval.ca
+http://beagle.sourceforge.net
+
+Open BEAGLE Mailing List
+http://groups.yahoo.com/group/openbeagle
+
+Open BEAGLE on SourceForge.net
+http://sourceforge.net/projects/beagle
+
+Apache Web Server
+http://httpd.apache.org
+
+PHP - Hypertext Preprocessor
+http://www.php.net
+
+MySQL Database
+http://www.mysql.com
+
+EasyPHP (for Windows users)
+http://www.easyphp.org
+
+SVG - Scalar Vector Graphics
+http://www.w3.org/Graphics/SVG
+
+Adobe SVG Plug-in
+http://www.adobe.com/svg
+
+Mozilla SVG Project
+http://www.mozilla.org/projects/svg
+
+
+
+
+

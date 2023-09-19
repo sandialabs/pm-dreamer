@@ -1,0 +1,124 @@
+PM-Dreamer: Genetic Programming for Functional Optimization of Force Fields
+
+Copyright (2009) Sandia Corporation.  Under the terms of Contract
+DE-AC04-94AL85000 with Sandia Corporation, the U.S. Government retains
+certain rights in this software.  This software is distributed under
+the GNU General Public License.
+
+----------------------------------------------------------------------
+
+
+#############################################################################
+# 1. Directory Contents
+#############################################################################
+
+./bin     Location of executables
+./data    Sample data for Lennard-Jones and Stillinger-Weber Targets
+./doc     Documentation for executables
+./libs    External libraries required for GP_Force
+./obj     Location of object files
+./src     Location of source files
+./param   Various GP parameter files for symbolic regression
+
+
+#############################################################################
+# 2. Installation from $ROOT_DIR
+#############################################################################
+
+# ------- GSL
+/tmp> tar -zxvf $ROOT_DIR/libs/gsl-1.9.tar.gz
+/tmp> cd gsl-1.9
+/tmp> ./configure
+/tmp> make
+/tmp> su -c "make install"
+# ------- Beagle
+/tmp> tar -zxvf $ROOT_DIR/libs/beagle-3.0.3.tar.gz
+/tmp> cd beagle-3.0.3
+/tmp/beagle-3.0.3> ./configure --enable-optimization CPPFLAGS=-DNDEBUG CXXFLAGS='-march=i686 -ffast-math -O3'
+/tmp/beagle-3.0.3> make
+/tmp/beagle-3.0.3> su -c "make install"
+/tmp/beagle-3.0.3> cd ..
+# ------- Beagle Visualizer
+/tmp> tar -zxvf $ROOT_DIR/visualizer-0.2.1.tar.gz
+/tmp> cd visualizer-0.2.1/
+/tmp/visualizer-0.2.1> ./configure
+/tmp/visualizer-0.2.1> make
+/tmp/visualizer-0.2.1> su -c "make install"
+# ------- GP_Force
+# GP_Force can be run in serial or in parallel. This can
+# be altered by editing the file $ROOT_DIR/src/Makefile.vars
+# to choose the appropriate compilation parameters.
+cd $ROOT_DIR/src/pm_dreamer
+make
+
+#############################################################################
+# 3. Local Installation from $ROOT_DIR to $HOME_DIR
+#############################################################################
+
+For a local installation (in home) follow the steps above, but configure with:
+
+/tmp> mkdir $HOME_DIR/gsl-lib
+/tmp> mkdir $HOME_DIR/beagle-lib
+
+# for GSL
+
+/tmp> ./configure --prefix=$HOME_DIR/gsl-lib
+
+# for Beagle
+
+/tmp> ./configure --enable-optimization CPPFLAGS=-DNDEBUG CXXFLAGS='-march=i686 -ffast-math -O3' --prefix=$HOME_DIR/beagle-lib
+
+#############################################################################
+# 4. PM-Dreamer
+#############################################################################
+
+This program will perform genetic programming optimization of functional
+forms for force-fields.
+
+TWO-BODY EXAMPLE: 4*(x^-12-x^-6)
+
+cd /tmp
+$ROOT_DIR/bin/pm_dreamer $ROOT_DIR/data/lj3.pair $ROOT_DIR/param/pair-generational.conf -s CORR
+
+or
+
+mpirun -np 2 $ROOT_DIR/bin/pm_dreamer $ROOT_DIR/data/lj3.pair $ROOT_DIR/param/pair-generational.conf -s CORR
+
+THREE-BODY EXAMPLE: f=sum(4.32*r^2+2.36)+sum(-1.51*(r1*r2+a)+.045)
+
+$ROOT_DIR/bin/pm_dreamer $ROOT_DIR/data/madeup.twothree $ROOT_DIR/param/three-generational.conf -s CORR -t twothree
+
+or
+
+mpirun -np 2 $ROOT_DIR/bin/pm_dreamer $ROOT_DIR/data/madeup.twothree $ROOT_DIR/param/three-generational.conf -s CORR -t twothree
+
+
+Documentation of parameters is in the doc/ directory.
+
+
+#############################################################################
+# 5. vis_gp
+#############################################################################
+
+This is a script for visualizing results from PM-Dreamer on a UNIX-like
+system. It requires that the ImageMagick 'convert' be in the
+current path. It takes a single argument
+which is the directory for the visualization output files. Upon successful
+completion, an html browser can be used to visualize the results. It must be
+run in the directory containing PM-Dreamer .log and .obm files.
+
+cd /tmp
+$ROOT_DIR/bin/pm_dreamer $ROOT_DIR/data/lj3.pair $ROOT_DIR/param/pair-generational.conf -s CORR
+$ROOT_DIR/bin/vis_gp ./vis_dir
+firefox ./vis_dir/index.html &
+
+
+#############################################################################
+# 6. get_fitness
+#############################################################################
+
+This is a script for extracting the best fitness from a log file or
+set of log files:
+
+$ROOT_DIR/bin/get_fitness *.log
+

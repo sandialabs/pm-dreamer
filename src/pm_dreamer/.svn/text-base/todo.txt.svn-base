@@ -1,0 +1,1 @@
+- pack_simplify takes the whole vector if num_types is greater than 1

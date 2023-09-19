@@ -1,0 +1,2485 @@
+.TH pm_dreamer 1 "February 17, 2010" "pm_dreamer (PM-Dreamer Utilities) 0.2" "PM-Dreamer Utilities"
+.SH NAME
+\fBpm_dreamer\fR - Optimization of functional forms for particle mechanics.
+.PD 2
+.SH VERSION
+.PD 1
+Version 0.2
+.PD 2
+.SH SYNOPSIS
+.PD 1
+.TP
+\fBpm_dreamer\fR input_data beagle_config_file [\fB-c\fR] [\fB-f\fR \fIfile_header\fR] [\fB-g\fR \fIstart_size\fR \fIend_size\fR] [\fB-h\fR] [\fB-n\fR \fInotice_level\fR] [\fB-p\fR \fIhfc_copy_num\fR] [\fB-r\fR \fIrseed\fR] [\fB-s\fR \fIstat_type\fR] [\fB-t\fR \fIenergy_type\fR] [\fB-z\fR]
+.br
+.PD 2
+.SH DESCRIPTION
+.PD 1
+PM-Dreamer is software for generation of empirical models for particle mechanics. The software takes as input data from a series of particle configurations and the corresponding energies and/or particle forces associated with those configurations. The output from PM-Dreamer is a set of functions that can potentially be used to calculate configuration energies for particles giving the force\fB-f\fRield necessary for particle simulations.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+PM-Dreamer obtains the equations for energy calculation using a combination of genetic programming and local search in order to minimize the root-mean square error in the calculation of energy and/or particle force. The genetic programming is based on the Open-BEAGLE library for evolutionary computation. This library has been extended in PM-Dreamer to allow for massively parellel optimization, hybrid local search, vectorized expression evaluation, template-based evaluation of fitnesses using particle configurations with periodic boundary conditions for 2 and 3-body particle interactions, and parallel restarts with the capability to switch datasets and/or function templates.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The input for PM-Dreamer consists of the \fIinput_data\fR file that contains particle configuration data and the \fIbeagle_config_file\fR that facilitates parameterization of the optimization. The formats available for the \fIinput_data\fR are described in the Fitness Evaluation section and can be specified with the \fB-t\fR flag. The format for the \fIbeagle_config_file\fR is taken from Open Beagle with the extensions described throughout this documentation. Examples for both should have been included with the software package.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+There are three types of output for PM-Dreamer. Console output describes the progress and statistics of the run and is controlled with the \fB-n\fR flag. Log file output also describes statistics in XML as specified in the \fIbeagle_config_file\fR. The default filename for the log file for serial runs is gp_force.log. For parallel runs a separate log file is written for each process with the default name gp_force_RR.log where RR is the process rank. The final output format consists of milestone files. These files contain an XML description of all of the expressions at a given point in the optimization and are also used to restart runs. The default name for the milestone files is gp_force.obm for serial or gp_force_RR.obm for parallel runs. Utilities for generating plots from the log files and graphic representations of expressions should have been included with this software package.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The following definitions are used throughout the documentation:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBIndividual\fR A single mathematical expression for calculation of the energies of particle configurations.
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBPrimitive\fR A primitive is a node in the expression tree. Examples of primitives include unary and binary mathematical expressions, variables used to describe the particle configurations, and constants in the expression.
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBTerminal/Constant/Ephemeral\fR A terminal is a primitive that takes no arguments. A constant/ephemeral is a terminal that is not used as a variable in the expression. Constants are typically randomly generated and can change during the optimization by mutation to generate a new random number or by local search executed to optimize the constants in an expression. Constants that should not be modified (such as pi) can also be specified.
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBFitness\fR A metric describing the error in an Individuals' calculation of the energy using the training data.
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBPopulation/Deme\fR A population or deme is a group of individuals that evolve together. Crossover occurs using multiple individuals from a population and selection occurs based on the individuals in a single population. Multiple populations can be used in a run. The populations evolve separately, but can interact through migration of individuals between the populations.
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBIsland\fR Here, an island is used in parallel runs to describe the population or set of populations undergoing evolution in a single MPI process.
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBVivarium\fR All of the populations involed in a run. 
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBHall of Fame\fR The Hall of Fame contains the \fIn\fR individuals with the best fitness(es) found during a run.
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBMilestone/Restart File\fR These files contain the output of all of the individuals at some point in the optimization and have the extension .obm
+.PD 0
+.TP
+.PP
+.PD 1
+ \fBHybrid Optimization/Local Search\fR Hybrid optimization occurs separately from the evolutionary optimization. With a specified probability, local search is performed on an individual to optimize 1 or multiple constants.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH PARAMETERS
+.PD 1
+.TP
+\fB-c\fR
+Restart from existing milestone files. When restarting, the functional form (\fB-t\fR), the \fIbeagle_config_file\fR file, and the \fIinput_data\fR can be different from those used in the original run. This allows the user to change parameters and/or add data to refine runs. If the \fB-f\fR flag was used to specify a non-default file header for the restart files. The \fB-f\fR flag should also be specified again with the same name when using \fB-r\fR. When running in parallel, the same number of processes should be used for the restart. If a smaller number is used, the extra individuals will be ignored. If a larger number is used, an error is generated. When restarting an optimization, the generation number starts at the last generation in the milestone file. Therefore, the maxgens termination criterion may need to be increased. The restart files are read by the ReadRestartOp in the \fIbeagle_config_file\fR
+.TP
+\fB-f\fR \fIfile_header\fR
+.PD 0
+.TP
+.PP
+.PD 1
+Specify the header for the .log output file and the .obm milestone files. The default is gp_force.
+.TP
+\fB-g\fR \fIstart_size\fR \fIend_size\fR
+.PD 0
+.TP
+.PP
+.PD 1
+Scale the fitness by the number of nodes in the tree. This can be used to reduce the average size of individuals. A tree with \fIstart_size\fR or smaller nodes has a maximum fitness of 1.0. A tree with \fIend_size\fR or greater nodes has a maximum fitness of 0.0.
+.TP
+\fB-h\fR
+Print out the man page for help
+.TP
+\fB-n\fR \fInotice_level\fR
+.PD 0
+.TP
+.PP
+.PD 1
+Set the degree of program output.  Use: 
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	\fB-n\fR  0	No output
+.PD 0
+.PP
+.PD 1
+	\fB-n\fR 10	Normal program output
+.PD 0
+.PP
+.PD 1
+	\fB-n\fR 20	Parameters useful for reproducing the results
+.PD 0
+.PP
+.PD 1
+	\fB-n\fR 30	All output. The degree of Open Beagle Output changes at 10,20, and 30.
+.TP
+\fB-p\fR \fIhfc_copy_num\fR
+.PD 0
+.TP
+.PP
+.PD 1
+Sets the ec.hfc.copy_num register as described below for HFC from the commandline. ec.mig.mpi_split is set to the same value to allow use with the MPI migration operator.
+.TP
+\fB-r\fR \fIrseed\fR
+.PD 0
+.TP
+.PP
+.PD 1
+Specify the random seed (unsigned long). Default is 1.
+.TP
+\fB-s\fR \fIstat_type\fR
+.PD 0
+.TP
+.PP
+.PD 1
+Choose the fitness statistic used. Options are RMSD for adaptive RMSD, CORR for the Pearson correlation coefficient, and OLS for ordinary least squares fitting. See the Fitness section for details on each method.
+.TP
+\fB-t\fR \fIenergy_type\fR
+.PD 0
+.TP
+.PP
+.PD 1
+Specify the functional form of the energy function
+.TP
+\fB-z\fR
+Disable vectorized tree evaluation. This will typically be at least 4x slower for the optimized Beagle library and greater than 15x slower for the unoptimzed library.
+.PD 2
+.SH BEAGLE CONFIGURATION FILE
+.PD 1
+The Beagle configuration file is used to control the optimization including the functions, terminals, operators, and replacement strategies that are used. Deatils on each section follow. A template for a configuration files is:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+<?xml version="1.0" encoding="ISO-8859-1"?>
+.PD 0
+.PP
+.PD 1
+<Beagle>
+.PD 0
+.PP
+.PD 1
+  <Evolver>
+.PD 0
+.PP
+.PD 1
+    <BootStrapSet>
+.PD 0
+.PP
+.PD 1
+    
+.PD 0
+.PP
+.PD 1
+      ... \fIPopulation Initialization\fR ...
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+    </BootStrapSet>
+.PD 0
+.PP
+.PD 1
+    <MainLoopSet>
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+      ... \fIReplacement Strategy\fR ...
+.PD 0
+.PP
+.PD 1
+        
+.PD 0
+.PP
+.PD 1
+        ... \fIFitness Evaluation\fR ...
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+          ... \fICrossover\fR ...
+.PD 0
+.PP
+.PD 1
+        
+.PD 0
+.PP
+.PD 1
+            ... \fISelection\fR ...
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+        ... \fIFitness Evaluation\fR ...
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+          ... \fIMutation\fR ...
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+            ... \fISelection\fR ...
+.PD 0
+.PP
+.PD 1
+        
+.PD 0
+.PP
+.PD 1
+        ... \fISelection\fR ...
+.PD 0
+.PP
+.PD 1
+        
+.PD 0
+.PP
+.PD 1
+      ... \fIMigration\fR ...
+.PD 0
+.PP
+.PD 1
+        
+.PD 0
+.PP
+.PD 1
+      ... \fIStatistics\fR ...
+.PD 0
+.PP
+.PD 1
+      
+.PD 0
+.PP
+.PD 1
+      ... \fITermination Criteria\fR ...
+.PD 0
+.PP
+.PD 1
+      
+.PD 0
+.PP
+.PD 1
+      ... \fIRestart File Output\fR ...
+.PD 0
+.PP
+.PD 1
+      
+.PD 0
+.PP
+.PD 1
+    </MainLoopSet>
+.PD 0
+.PP
+.PD 1
+  </Evolver>
+.PD 0
+.PP
+.PD 1
+  <System>
+.PD 0
+.PP
+.PD 1
+  <PrimitiveSuperSet>
+.PD 0
+.PP
+.PD 1
+    <PrimitiveSet>
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+      ... \fIFunctions\fR ...
+.PD 0
+.PP
+.PD 1
+      
+.PD 0
+.PP
+.PD 1
+      ... \fITerminals\fR ...
+.PD 0
+.PP
+.PD 1
+      
+.PD 0
+.PP
+.PD 1
+    </PrimitiveSet>
+.PD 0
+.PP
+.PD 1
+  </PrimitiveSuperSet>
+.PD 0
+.PP
+.PD 1
+  <Register>
+.PD 0
+.PP
+.PD 1
+    
+.PD 0
+.PP
+.PD 1
+      ... \fIRegister values\fR ...
+.PD 0
+.PP
+.PD 1
+  
+.PD 0
+.PP
+.PD 1
+  </Register>
+.PD 0
+.PP
+.PD 1
+  </System>
+.PD 0
+.PP
+.PD 1
+</Beagle>
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH POPULATION INITIALIZATION
+.PD 1
+The initialization is accomplished using the following operators:
+.PD 0
+.PP
+.PD 1
+\fBGP-InitHalfOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Koza's ramped half-and\fB-h\fRalf generative method. An equal number of expression trees are generated using a depth parameter that ranges between 2 and the maximum specified depth
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBGP-InitFullOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The initial population will consist of expression trees that all have a depth equal to the maximum depth.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBGP-InitGrowOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The initial population consists of expression trees of variable depths.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBRestartReadOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Read in population from a restart (milestone) file. This operator replaces the MilestoneReadOp operator in Open Beagle to allow the parameters in the \fIbeagle_config_file\fR to override those in the milestone file. The example below checks to see if the register, ms.restart.file, is set. If it is, a restart file is read in. Otherwise, a population is generated using half-and\fB-h\fRalf followed by fitness evaluation and statistics output:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+<BootStrapSet>
+.PD 0
+.PP
+.PD 1
+  <IfThenElseOp parameter="ms.restart.file" value="">
+.PD 0
+.PP
+.PD 1
+    <PositiveOpSet>
+.PD 0
+.PP
+.PD 1
+      <GP-InitHalfOp/>
+.PD 0
+.PP
+.PD 1
+      <EnergyOp/>
+.PD 0
+.PP
+.PD 1
+      <GP-StatsCalcFitnessSimpleOp/>
+.PD 0
+.PP
+.PD 1
+    </PositiveOpSet>
+.PD 0
+.PP
+.PD 1
+    <NegativeOpSet>
+.PD 0
+.PP
+.PD 1
+      <RestartReadOp/>
+.PD 0
+.PP
+.PD 1
+    </NegativeOpSet>
+.PD 0
+.PP
+.PD 1
+  </IfThenElseOp>
+.PD 0
+.PP
+.PD 1
+</BootStrapSet>
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH REPLACEMENT STRATEGY AND MIGRATION
+.PD 1
+The replacement strategy is specified using the follow operators:
+.PD 0
+.PP
+.PD 1
+\fBDecimateOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Shrink the population size by keeping the n best individuals
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBGenerationalOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Breeding tree following a generation by generation replacement strategy
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBHierarchicalFairCompetitionOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ HCF operator inspired by the work of Hu and Goodman
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBMigrationRandomRingOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Migrate randomly chosen individuals between populations using a ring topology
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBMuCommaLambdaOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ A (Mu,Lambda) operator generates Lambda children individuals from a population of Mu parents(where Lambda > Mu). From these Lambda individual, it keeps the Mu best to constitute the new generation.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBMuPlusLambdaOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ A (Mu+Lambda) operator generates Lambda children individuals from a population of Mu parents (usually where Lambda > Mu). From the Mu parents and the Lambda individual, it keeps the Mu best  individuals to constitute the new generation.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBNSGA2Op\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The NSGA2 replacement strategy implement the elitist multiobjective evolutionary algorithm NSGA2 (Non-dominating Sorting Genetic Algorithm)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBOversizeOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ An oversize operator generates (ratio * population size) children individuals from a population of Mu parents.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBSteadyStateOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Steady state replacement strategy operator
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH CROSSOVER AND MUTATION
+.PD 1
+Crossover and mutation are specified using the follow operators:
+.PD 0
+.PP
+.PD 1
+\fBGP-CrossoverOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Crossover of two individuals to produce a new individual
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBGP-MutationEphemeralDoubleOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Mutate the value of a randomly chosen double precision constant in the tree
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBGP-MutationShrinkOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Replace a randomly chosen branch with a randomly chosen argument on the branch
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBGP-MutationStandardOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Canonical GP Mutation
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBGP-MutationSwapOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Swap nodes in the expression tree
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBGP-MutationSwapSubtreeOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Swap branches in the expression tree
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH SELECTION
+.PD 1
+Selection is specified using the follow operators:
+.PD 0
+.PP
+.PD 1
+\fBNPGA20p\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Multiobjective evolutionary algorithm NPGA 2 (Niched Pareto Genetic Algorithm)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBSelectParsimonyTournOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ A simple lexicographic parsimony pressure tournament selection operator, based an idea presented in: Luke, S., and L. Panait. 2002. Lexicographic Parsimony Pressure.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBSelectRandomOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Select an individual in a population randomly operator class (uniform distribution).
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBSelectRouletteOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Proportionnal roulette selection operator class.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBSelectTournamentOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Tournament selection operator class.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH TERMINATION
+.PD 1
+Optimization is terminated using the following operators:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBTermMaxGenOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Maximum generation termination criterion operator.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBTermMaxFitnessOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Maximum fitness value termination criterion operator class.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBTermMaxHitsOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Number of hits required in an individual in order for the evolution process to terminate.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBTermMaxEvalsOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Maximum number of fitness evaluations termination criterion operator.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH RESTART FILES AND POPULATION OUTPUT
+.PD 1
+Files output containing populations that can also be used for continuing a simulation are generated with the following operators. (See also POPULATION INITIALIZATION.)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBMilestoneWriteOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Write out a milestone file
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBParetoFrontCalculateOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Evaluate Pareto front from demes and vivarium and put it in place of the actual hall-of\fB-f\fRame. The Pareto front is evaluated just before milestones are written. If previous hall-of\fB-f\fRame are presents in the demes/vivarium, they are erased. This operator must be in the evolver's operator sets between the termination criterion check operators and the MilestoneWriteOp operator.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH STATISTICS
+.PD 1
+Statistics on fitness, function and terminal usage, and expression tree size are generated using the follow operators:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+GP-StatsCalcFitnessSimpleOp, GP-StatsCalcFitnessKozaOp, GP-PrimitiveUsageStatsOp, GP-IndividualSizeFrequencyStatsOp
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH ADF and Constrained Operators
+.PD 1
+Automatically Defined Functions (ADF) and constrained operators are also available:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+GP-ModuleCompressOp, GP-ModuleExpandOp, GP-CrossoverConstrainedOp, GP-InitHalfConstrainedOp, GP-InitFullConstrainedOp, GP-InitGrowConstrainedOp, GP-MutationShrinkConstrainedOp, GP-MutationStandardConstrainedOp, GP-MutationSwapConstrainedOp, GP-MutationSwapSubtreeConstrainedOp.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The additional primitives for the ADF operators include:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+ADF (Automatically Defined Function) and ARG (Generic Argument for ADF)
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH FUNCTIONS
+.PD 1
+The following functions can be utilized as primitives in the expression
+.PD 0
+.TP
+.PP
+.PD 1
+ Abs,Add,Cos,Divide,Exp,Log,Multiply,Sin,Subtract
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+Additional functions added by PM-Dreamer are described below. Functions are added by listing the function name and bias in the primitive set. For example:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+      <Primitive name="ADD" bias="1"/>
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH TERMINALS
+.PD 1
+The terminals are primitives in the expression tree that do not take arguments (e.g. constants in the expression or variables of the expression. Some that can be included are a double precision number [-1, 1] (E), PI (Pi), and/or a variable, (X), for the potential:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+      <Primitive name="E" bias="1"/>
+.PD 0
+.PP
+.PD 1
+      <Primitive name="Pi" bias="1"/>
+.PD 0
+.PP
+.PD 1
+      <Primitive name="X" bias="1"/>
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH ADDITIONAL PRIMITIVES
+.PD 1
+The additional function and terminal primitives have been added:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+ \fBE_i\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Double precision integer [-20,20]. Generation or mutation of E_i results in an integer, however, hybrid optimization can produce non-integer numbers.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBE_d\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Double precision number [-20,20].
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBPow\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Exponentiation.
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH REGISTERS
+.PD 1
+The registers allow for parameterization of the operators and optimization (e.g. mutation frequency, number of generations, etc.). The registers can be set by specifying the register and the value in the configuration file:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+    <Entry key="ec.pop.size">500/500/500/500</Entry>
+.PD 0
+.PP
+.PD 1
+    <Entry key="ec.term.maxgen">100</Entry>
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+A list of registers and short descriptions is given below. If the value type of a register begins with U, the type is unsigned. If the value type is an array, individual elements are delimeted using a /.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.conf.dump\fR	<String> (def: "") 
+.PD 0
+.TP
+.PP
+.PD 1
+ Filename used to dump the configuration. A configuration dump means that a configuration file is written with the evolver (including the composing operators) and the register (including the registered parameters and their default values). No evolution is conducted on a configuration dump. An empty string means no dump.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.elite.keepsize\fR	<UInt> (def: 1) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Number of individuals keep as is with strong n-elitism.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.hof.demesize\fR	<UInt> (def: 0) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Number of individuals kept in each deme's hall-of\fB-f\fRame (best individuals so far). Note that a hall-of\fB-f\fRame contains only copies of the best individuals so far and is not used by the evolution process.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.hof.vivasize\fR	<UInt> (def: 1) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Number of individuals kept in vivarium's hall-of\fB-f\fRame (best individuals so far). Note that a hall-of\fB-f\fRame contains only copies of the best individuals so far and is not used by the evolution process.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.init.seedsfile\fR	<String> (def: "") 
+.PD 0
+.TP
+.PP
+.PD 1
+ Name of file to use for seeding the evolution with crafted individual. An empty string means no seeding.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.mig.interval\fR	<UInt> (def: 1) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Interval between each migration, in number of generations. An interval of 0 disables migration.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.mig.size\fR	<UInt> (def: 5) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Number of individuals migrating between each deme, at a each migration.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.pop.size\fR	<UIntArray> (def: 100) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Number of demes and size of each deme of the population. The format of an UIntArray is S1,S2,...,Sn, where Si is the ith value. The size of the UIntArray is the number of demes present in the vivarium, while each value of the vector is the size of the corresponding deme.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.repro.prob\fR	<Float> (def: 0.1) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Probability that an individual is reproducted as is, without modification. This parameter is useful only in selection and initialization operators that are composing a breeder tree.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.sel.tournsize\fR	<UInt> (def: 2) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Number of participants for tournament selection.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.term.maxfitness\fR	<Float> (def: 1) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Fitness value to reach before stopping evolution.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.term.maxgen\fR	<UInt> (def: 50) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Maximum number of generations for the evolution.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.cx.distrpb\fR	<Float> (def: 0.9) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Probability that a crossover point is a branch (node with sub\fB-t\fRrees). Value of 1.0 means that all crossover points are branches, and value of 0.0 means that all crossover points are leaves.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.cx.indpb\fR	<Float> (def: 0.9) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Individual crossover probability at each generation.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.init.maxargs\fR	<UIntArray> (def: 0/2) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Maximum number of arguments in GP tree. Tree arguments are is usually useful with ADFs (and similar stuff).
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.init.maxdepth\fR	<UInt> (def: 5) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Maximum depth for newly initialized trees.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.init.maxtree\fR	<UInt> (def: 1) 
+.PD 0
+.TP
+.PP
+.PD 1
+ Maximum number of GP tree in newly initialized individuals. More than one 
+.PD 2
+.SH FITNESS EVALUATION
+.PD 1
+The fitness evaluation in PM-Dreamer can be calculated using several different fitness statistics specified with the \fB-s\fR flag. The fitness in each case is given by \fIF\fR:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.EQ
+ F ~=~ 1 over {1 ~+~ c times s ( bold e , bold p )} 
+.EN
+ 
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+where \fBe\fR represents the energies and/or forces from the training set normalized by the number of distances used in the calculation of each energy/force and \fBp\fR represents those normalized values as calculated by a candidate individual. For the adaptive RMSD, \fIc\fR=1 and \fIs\fR(\fBe\fR,\fBp\fR) is the normalized root mean squared error between \fBe\fR and \fBp\fR. For the Pearson correlation coefficient, \fIc\fR=100 and \fIs\fR is given by the absolute value of the correlation coefficient between \fBe\fR and \fBp\fR. For OLS, ordinary least squares is performed to give the linear rescaling of \fBp\fR that results in the lowest RMSD with \fBe\fR. For 3-body potentials, the least squares problem is solved to optimize the linear combination of the 2 and 3 body functions that optimize the fit. In this case, \fIs\fR is this RMSD and \fBc\fR is 1. When using the Pearson correlation or OLS, the functions must be post\fB-p\fRrocessed to minimize the RMSD by solving analytically for new constants in the expression tree. This can be accomplished using \fBOLSCorrectOp\fR or \fBDreamerOp\fR as described below. The calculation of \fBp\fR according to the candidate expression is performed using one of several templates specified with the \fB-t\fR option. For all, the fitness calculation in the \fIbeagle_config_file\fR file is specified using \fBEnergyOp\fR.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBPAIR POTENTIALS\fR (\fI\fB-t\fR pair\fR)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The pair potential, \fBpair\fR, is the default functional form used for fitness calculation. It is calculated as:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+ 
+.EQ
+ p ~=~ 1 over n sum from i=1 to n ~g ~( X sub i ) 
+.EN
+ 
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+where \fIX_i\fR is a single variable describing the particle pair (e.g. the inter\fB-p\fRarticle distance) and \fIg\fR is the function optimized using genetic programming. The fitness of the function is evaluated using a set of sample configurations for which the energies have been calculated. For example input file formats, see \fIpair\fR and \fIefxyz\fR below. In order to use this template, the X variable should be added to the primitive set:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	<Primitive name="X"   bias="1"/>
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBPAIR POTENTIALS WITH FORCE\fR (\fI\fB-t\fR paird\fR)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The pair potential with force, \fBpaird\fR, is similar to \fBpair\fR with the exception that a particle force is supplied for a particle in each configuration allowing the potential function to be fit to both the energy and the force. When this style is used the fitness is one half the fitness statistic calculated for the energies plus one half the fitness statistic calculated for the forces.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+When OLS is used as a fitness statistic, the least squares optimization is performed using only the energies - the force calculation is performed using the resulting formula. The Pearson correlation is calculated separately for the energies and forces - therefore it might not be possible to 'correct' the equations with a single set of optimized coefficients.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+Here, the potential is calculated as described for the \fBpair\fR style, and the force is calculated as the negative gradient of the energy for a particle using forward finite-difference. This style requires an input format that supports forces; for an example, see efxyz below. The equations that result from the optimization will be in terms of the independent variable \fIX\fR which represents the interparticle distance for a pair as calculated from the supplied positions. Therefore, \fIX\fR should be added to the primitive set as described for \fBpair\fR.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBPAIR POTENTIAL USING ONLY THE FORCE\fR (\fI\fB-t\fR pairf\fR)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+This template is similar to \fBpaird\fR with the difference that only the forces are used in fitness evaluation. This style can therefore allow for much faster optimization followed by refinement by switching to style \fBpaird\fR. Any energies specified in the input file are ignored.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBPAIR POTENTIAL USING ONLY THE X-FORCE\fR (\fI\fB-t\fR pairf1\fR)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+This template is similar to \fBpairf\fR except that only the x component of the force is utilized for fitness evaluation.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBTWO/THREE BODY POTENTIALS\fR (\fI\fB-t\fR twothree\fR)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+This template evaluates two summations for the potential energy and can be used to fit potentials that include a 2-body term and a 3-body term. The form for the expression is:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.EQ
+ p ~=~ 1 over n sum from i to n ~g ~( X sub i ) ~+~ 1 over n sum from i to m ~h ~( R1 sub i , R2 sub i, A sub i ) 
+.EN
+ 
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The sample data therefore consists of a set variables \fIX_1\fR,...,\fIX_n\fR that are evaluated in the first summation and a second set \fIR1_1\fR,...,\fIR1_m, \fIR2_1\fR,...,\fIR2_m, and \fIA_1\fR,...,\fIA_m\fR that are evaluated in the second summation, where \fIn\fR is not necessarily equal to \fIm\fR. For a 2/3-body potential, \fIX\fR might represent the interparticle distances in the 2-body part of the potential. For the 3-body part, \fIR1\fR and \fIR2\fR might represent the distances from particle 1 to particles 2 and 3 and \fIA\fR might represent the angle cosine between the corresponding vectors. Example input data file formats for this style include \fItwothree\fR and \fIefxyz\fR (below). In order to use this style, the variables X, R1, R2, and A must be added to the primitive set:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	<Primitive name="X"   bias="1"/>
+.PD 0
+.PP
+.PD 1
+	<Primitive name="R1"  bias="1"/>
+.PD 0
+.PP
+.PD 1
+	<Primitive name="R2"  bias="1"/>
+.PD 0
+.PP
+.PD 1
+	<Primitive name="A"   bias="1"/>
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The equations for \fIg\fR and \fIh\fR are stored in the same expression tree where \fIg\fR is the left subtree of the root node and \fIh\fR is the right subtree of the root node. For this template, the root node is meaningless.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBTWO/THREE BODY POTENTIALS WITH FORCE\fR (\fI\fB-t\fR twothreed\fR)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+This template evaluates the \fBtwothree\fR potential style, but also evaluates the force for a single particle in each configuration in the fitness function. This is done in an identical manner to the \fBpaird\fR potential style. Using the cutoff and particle positions, the vector \fBX\fR is calculated to contain all particle pairwise distances smaller than the cutoff. Likewise, for all particle triplets, the vectors \fBR1\fR, \fBR2\fR and \fBA\fR are calculated to contain the distances between the center atom and the other two atoms and the angle cosine between the corresponding vectors if the two distances are both smaller than the cutoff. As with the other twothree styles, the variables X, R1, R2, and A should be added to the primitive set.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+As with paird, when OLS is used as a fitness statistic, the least squares optimization is performed using only the energies - the force calculation is performed using the resulting formula. The Pearson correlation is calculated separately for the energies and forces - therefore it might not be possible to 'correct' the equations with a single set of optimized coefficients.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBTWO/THREE BODY POTENTIALS USING ONLY FORCE\fR (\fI \fB-t\fR twothreef\fR)
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+This template is similar to \fBtwothreed\fR with the exception that only the force is used in the fitness evaluation. This allows for potentially faster optimizations and can be used to seed further runs that use the \fBtwothreed\fR style. Any energies in the input data files are ignored.
+.PD 2
+.SH DATA FILE TYPES
+.PD 1
+Several data file types are supported for specifying the energies and/or forces along with configuration data: 
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBEFXYZ Data File Type\fR
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+This data type supports configuration data in the form of atom positions with an option for periodic boundary conditions and a cutoff. Exactly 1 energy and 1 particle force are supplied per configuration. Zero(s) can be used in place of the energy or force if unknown and not used in  the optimization (see fitness evaluation above). The file type supports only 1 particle type. The format for the input data file is: 
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	# Comments for the input file
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	filetype efxyz
+.PD 0
+.PP
+.PD 1
+	cutoff \fIC\fR
+.PD 0
+.PP
+.PD 1
+	periodic \fIp_x p_y p_z\fR
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	
+.EQ
+ e " " f sub i " " f sub x " " f sub y " " f sub z " " x sub 1 " " y sub 1 " " z sub 1 " " x sub 2 " " y sub 2 " " z sub 2 " ..." 
+.EN
+
+.PD 0
+.PP
+.PD 1
+	...
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+First a cutoff is specified such that particle pairs with a distance greater than \fIC\fR contribute zero to the force and energy calculation. If \fIC\fR is negative, the cutoff is infinity. If the periodic keyword is present, periodic boundary conditions are used with box dimensions equal to \fIp_x\fR, \fIp_y\fR and \fIp_z\fR. Each of the following lines begins with an energy \fIe\fR followed by an index to a particle for which the force is computed, \fIf_i\fR. The first particle index is 1. This is followed by the Cartesian components of the force. Finally the Cartesian coordinates for each particle in the system are given.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBEFIXYZ Data File Type\fR
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+This file is similar to the efxyz format except that multiple particle types can be specified:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	# Comments for the input file
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	filetype efixyz
+.PD 0
+.PP
+.PD 1
+	cutoff \fIC\fR
+.PD 0
+.PP
+.PD 1
+	periodic \fIp_x p_y p_z\fR
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	types \fIN\fR
+.PD 0
+.PP
+.PD 1
+	
+.EQ
+ e " " f sub i " " f sub x " " f sub y " " f sub z " " i sub 1 " " x sub 1 " " y sub 1 " " z sub 1 " " i sub 2 " " x sub 2 " " y sub 2 " " z sub 2 " ..." 
+.EN
+
+.PD 0
+.PP
+.PD 1
+	...
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+where \fIN\fR is the number of particle types and \fIi\fR is the type for each particle. The valid range for particle types is [1..\fIN\fR]. See the multiple particle types section for more information on performing these types of optimizations.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBPAIR Data File Type\fR
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The pair file type supports configuration input in terms of an energy and a single variable, X, that the potential is summed over to calculate an energy (e.g. X can be the interatomic distance used to compute the energy). The file type only supports 1 particle type for configurations and only 2-body potentials. Additionally, fitness evaluation is limited to templates that do not use particle forces. The format for the input file is: 
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+ 	# Comments for the input file
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	filetype pair
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	
+.EQ
+ e " " X sub 1 " " X sub 2 " ..." 
+.EN
+
+.PD 0
+.PP
+.PD 1
+	
+.EQ
+ e " " X sub 1 " " X sub 2 " ..." 
+.EN
+
+.PD 0
+.PP
+.PD 1
+	...
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+Each line begins with an energy \fIe\fR and is followed by a variable number of data points for each pair in the configuration. Empty lines and lines beginning with # are ignored.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBTWOTHREE Data File Type\fR
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+This file type is used for potentials that perform a summation of some function over all pairs and a separate summation over all triplets. The template allows for a single variable, X, in the two-body equation (e.g. interatomic distance), and 3 variables (R1, R2, and A) for the 3-body equation (e.g. interatomic distances and triplet angle). The file type only supports 1 particle type and can only be used with 3-body fitness evaluation. Additionally, fitness evaluation is limited to templates that do not use particle force. The format for the input data file is:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	# Comments for the input file
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	filetype twothree
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	
+.EQ
+ e " " bold TWO " " X sub 1 " ... " X sub n " " bold THREE " " R1 sub 1 " " R2 sub 1 " " A sub 1 " ... "R1 sub m " " R2 sub m " " A sub m 
+.EN
+
+.PD 0
+.PP
+.PD 1
+	...
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+where \fIe\fR is the energy of the configuration.
+.PD 2
+.SH PARALLEL PM-DREAMER
+.PD 1
+PM-Dreamer can be run in parallel using an island model. In serial, PM-Dreamer uses the Open Beagle model allowing for multiple populations with individual movement according to migration operators. In parallel PM-Dreamer allows for multiple islands, 1 per process, to be run. Each island can contain multiple populations with migration controlled by the standard operators. Migration between the islands is controlled by additional operators which are described below. The output for each island is written separately to the files gp_force_0.log, gp_force_1.log, ... and gp_force_0.obm(.gz), gp_force_1.obm(.gz), ... It should be noted that in the current implementation, random seeds only produce the same output when run on the same number of processors. When running in parallel, the MPITerminateOp should be used to to assure proper termination of all processes in a run. The additional operators available for parallel execution are:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBMigrationMPIOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Each time \fIec.mig.mpi_interval\fR generations passes, \fIec.mig.mpi_size\fR individuals from each population on an island migrate to a randomly chosen island and are replaced with immigrants from a second randomly chosen island. The random islands are chosen such that all islands will participate in migration at each iteration. The operator does not perform migration between populations on the same island. This can be achieved using standard migration operators in addition to MigrationMPIOp
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBHFCompMPIOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ This implements a distributed parallel algorithm for the Hierarchical Fair Competition inspired by the work of Hu and Goodman. (Similar to the serial HierarchicalFairCompetitionOp). This operator should not be used with the serial HierarchicalFairCompetitionOp operator. In this algorithm, a fitness threshold is chosen such that any individuals from a population with index \fIi\fR will migrate to the population \fIi\fR+1 if their fitness is better than the fitness threshold for that population \fIi\fR+1. If any populations has excess individuals following migration, the least fit individuals are killed off. Random individuals are added to account for any shortages. This promotes a hierarchy of populations where the fitness of the best individuals improves with the population index. The migration occurs through all populations on a single island followed by migration of individuals of the last population of one island to the first population of another. In order to achieve parallel efficiency, their is a 1\fB-s\fRtep lag from the time individuals migrate out of an island to the time they arrive at the next. The fitness thresholds for the populations can be set in 2 ways. In the default, ec.hfc.first is set to -1 and the fitness threshold for a population is set to a value where the threshold is greater than ec.hfc.percentile of the population. For example, if ec.hfc.percentile is 0.85 the fitness threshold for a population is set to the value of the individual whose fitness is worse than only 15% of the population. In the case, the fitness thresholds are adaptive. In the second approach, the fitness thresholds are fixed. ec.hfc.first (float greater than 0 and less than 1) is set to the fitness threshold of the first population accepting incoming individuals. The thresholds for the subsequent populations are increased according to ec.hfc.scale (described below)to allow for thresholds up to but less than 1.0
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBGP-StatsCalcFitSimpleMPIOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ This operator can replace GP-StatsCalcFitnessSimpleOp to replace Vivarium statistics for a single island with Vivarium statistics for all processes in the log file on process 0. The best hall-of\fB-f\fRame individual from all processes is also stored in the milestone file for process 0. When using this operator, analysis of the log file generated on process 0 should be all that is necessary under most circumstances. This operator will also output fitness information and a "pretty" representation of the best individual at each generation to stdout.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBMPITerminateOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ This signals the application to terminate execution of all processes whenever a single island is terminated by any of the termination operators. This operator also delays termination until all demes are evaluated for a given generation. This allows proper communication of statistics and end-of\fB-r\fRun operations such as simplification and OLS correction to occur In order to work properly, the operator should be placed following any other termination operators.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBTermMaxTimeOp\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Terminate after ec.term.maxtime minutes have passed. If compiled with MPI, this is the MPI wall time. Otherwise, this is the time calculated using c_time clock(). If set to zero, the operator is ignored. This operator will also log the time at each generation to stdout
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The registers available for parallel execution are:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.mig.mpi_interval\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The number of generations that must pass before a migration between islands occurs.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.mig.mpi_size\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The number of individuals that migrate from each population of each island.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.term.maxtime\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Terminate the evolution after this many minutes (default 60).
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.hfc.percentile 
+.PD 0
+.TP
+.PP
+.PD 1
+ Percentile of fitness measure to use as HFC migration threshold of next population. For example, a threshold of 0.85 means that the fitness used as threshold to accept migrant into following population is taken as the fitness of the individual that is better than 85% of the other individuals in its population. Default is 0.85. This value is ignored if ec.hfc.first is positive
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.hfc.first 
+.PD 0
+.TP
+.PP
+.PD 1
+ If negative, adaptive thresholds are used for HFC according to ec.hfc.percentile. If positive, the register must be greater than 0 and less than 1.0. The thresholds for the populations in HFC are then set evenly spaced fixed values between \fIfirst\fR and 1.0.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.hfc.scale\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ This parameter is used to adjust how the fitness thresholds of populations are scaled if adaptive thresholds are not used (ec.hfc.first>0). The ratio between the fitness thresholds of populations is given by ec.hfc.scale to create a geometric series between ec.hfc.first and 1.0. If ec.hfc.scale is 1, the fitness thresholds are evenly spaced. If ec.hfc.scales is >1, more of the fitness thresholds are at lower fitnesses. If <1, more are at higher fitnesses. The default value is 1.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.hfc.interval\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Interval between each hierarchical fair competition migration, in number of generations. An interval of 0 disables HFC migrations. Default is 1.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.hfc.copy_num\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ This flag controls the number of islands that have the same fitness thresholds. For example, a 4 processor job can have fitness thresholds of {0, 0.25, 0.5, 0.75} when copy_num is 1 or fitness thresholds of {0, 0, 0.5, 0.5} when copy_num is 2. For the latter case, an individual on island 0 or 1 who exceeds the fitness threshold of 0.5 will migrate to either population 3 or 4 randomly. When copy number is greater than 1, migration between islands with the same fitness threshold can be allowed with the use of MigrationMPIOp and a ec.mig.mpi_split register value equal to copy_num. This register can also be set from the command line. Default is 1.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBec.mig.mpi_split\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ When this register is greater than 1, the islands are split into groups of size ec.mig.mpi_split. Each group contains a sequential ordering of islands according to process rank. Migration according to the MigrationMPIOp will then only occur within a group. This can be used with HFCCompMPIOp to restrict migration only between populations with the same fitness threshold. Default is 0
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH HYBRID PM-DREAMER
+.PD 1
+PM-Dreamer supports hybrid optimization of functional forms, allowing for local optimization of constants in the expression tree. This is accomplished by adding the \fBGP-HybridOptOp\fR operator. The registers that parameterize the operator include:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.hybopt.indpb\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The frequency with which hybrid optimization is performed on an indivual. The default value is 0.05.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.hybopt.primit\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The name for the constants in the tree that are optimized. Default is E.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.hybopt.type\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The type of optimization to be performed. If the value is 0, all constants in an expression tree are optimized using multidimensional Nelder/Mead Simplex algorithm. If the value is nonzero, a random constant in the expression tree is optimized using 1D minimization (also with Simplex). The default value is 1.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.hybopt.maxi\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The maximum number of iterations of local optimization to be performed. Default is 10.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.hybopt.simplify\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ If nonzero, function simplification is performed before each optimization. See SimplifyOp. Default is 0.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.hybopt.mtypes\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ If nonzero, optimization is also performed on the E_p and E_t constants used for multiple particle types. See MULTIPLE PARTICLE TYPES section below for more details. Default is 1.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+Please see Function Simplification for additional registers that control simplification during hybrid optimization.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+An analytic optimization is also available that utilizes least squares for function optimization. For a 2-body potential function \fIf\fR the function is modified to give \fIf'\fR=\fIaf+b\fR where \fIa\fR and \fIb\fR are optimized to result in the lowest RMSD. For a 3-body potential \fIf+g\fR, four constants are optimized to give \fIaf+b+cg+d\fR. This is accomplished with the \fBGP-OLSCorrectOp\fR operator. Because this operator increases the function size at each operation, it is recommended that it only be performed once (e.g. at the end of a run). \fBDreamerOp\fR described below is one way to accomplish this. The registers for \fBGP-OLSCorrectOp\fR are:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.olscorrect.name\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The name of the primitives added that store constant values. Default is E.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.olscorrect.indpb\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The probability of operation on an individual. Default is 1.0
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.olscorrect.interval\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The interval in generations between operations. Default is 20
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH FUNCTION SIMPLIFICATION
+.PD 1
+PM-Dreamer supports function simplification to reduce tree size. This is accomplished by evaluating each non\fB-t\fRerminal node of the tree for the set of input values. If the range of answers for the set of evaluations is smaller than a specified threshold, the subtree is replaced with a constant value. Likewise, if a subtree evaluates to be identical to an input variable, it is replaced with that variable. This is accomplished by adding the \fBGP-SimplifyOp\fR operator. The registers that parameterize the operator include:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.simplify.indpb\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The frequency with which simplification is performed on an indivual. The default value is 1.0.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.simplify.name\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The name of the ephemeral for constants used to replace subtrees. Default is E.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.simplify.eps\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The threshold for determining invariance. The default is 1e-20.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.simplify.maxe\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ The maximum number of evaluations used to determine invariance. The evaluations are performed using the same input data that is used for fitness evaluation. If 0, all input data are used. Otherwise, the first maxe function evaluations are performed. The default is 0.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fBgp.simplify.interval\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Interval in generations between each simplification operation. An interval of 0 disables simplification. Default is 20.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+You can also perform simplification on an individual before hybrid optimization. In this case, the <GP-SimplifyOp> operator does not need to be specified explicitly in the configuration file. However the registers that control simplification should still be specified (aside from gp.simplify.indpb which is not used).
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH DREAMER OPERATOR
+.PD 1
+The Dreamer operator \fBDreamerOp\fR is utilized to perform post\fB-p\fRrocessing of the best individual from a run. Additionally, the operator includes the functions of \fBMPITerminateOp\fR and \fBGP-StatsCalcFitSimpleMPIOp\fR. At the end of a run the best individual is simplified (\fBGP-SimplifyOp\fR) and optimized (\fBGP-HybridOptOp\fR) using the user\fB-s\fRpecified fitness statistic. OLS optimization is then performed (\fBGP-OLSCorrectOp\fR). This is followed by a second round of simplification and optimization using AdaptiveRMSD as the fitness statistic. For parallel runs, the best individual from all processes is moved to the hall-of\fB-f\fRame on process 0. The user\fB-s\fRpecified fitness, functional form, and RMSD for the energies and/or forces is reported. As with \fBGP-StatsCalcFitSimpleMPIOp\fR, this function will add monitoring of the fitness and functional form of the best individual during the run. Because the operator incorporates \fBMPITerminateOp\fR, it should be placed following any other termination operators. The following registers (described above) can be specified when using \fBDreamerOp\fR: \fIgp.simplify.name, gp.simplify.eps, gp.simplify.maxe, gp.olscorrect.name, gp.hybopt.primit\fR. \fBgp.hybopt.type\fR is set to 0 and gp.hybopt.maxi is set to 100 when performing optimization \fIwithin\fR \fBDreamerOp\fR. \fBGP-StatsCalcFitSimpleMPIOp\fR and \fBMPITerminateOp\fR do not need to be specified in the input parameter file when using \fBDreamerOp\fR. \fBGP-HybridOptOp\fR and \fBGP-SimplifyOp\fR should be specified if you wish to perform these operations during the run.
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH RESTARTING OPTIMIZATIONS
+.PD 1
+Simulations can be restart using the \fB-c\fR flag. This requires that the ReadRestartOp operator be present in the \fIbeagle_config_file\fR. The ReadRestartOp replaces the MilestoneReadOp in OpenBeagle. When restarting, the individuals and the generation number are read. The data, template_style, and parameters from the previous run are not read in. This allows the user to continue a run with new data, template_style, and/or configuration parameters. When restarting a run with new data or a new template_style, the fitness of all individuals are recalculated and the Hall of Fame individuals are updated with any changes that result from the new fitness evaluation. Because the restart will start using the last generation from the milestone files, the ec.term.maxgen register may need to be increased to allow for a larger number of generations. When restarting in parallel, if a smaller number of processors is used, the individuals from the higher rank processes will be thrown out.
+.PD 2
+.SH VECTORIZATION
+.PD 1
+PM-Dreamer allows for vectorized evaluation of expression trees (which is now the default). Vectorization can be disabled by using the \fB-z\fR flag. When vectorization is enabled, the expression tree for a given individual needs to be parsed only a single time using the vector(s) of values necessary for energy/force calculation. This provides an improvement in speed because it prevents multiple parsing of the same expression tree and the potential for SIMD compiler optimizations. The configuration file does not need to be changed to utilize vectorization; internal replacements of the standard primitives and fitness operators are performed to allow vector math operations to be performed. Although the runs with vectorization should produce identical results, changes due to finite precision and the order of summation operations can result in different results. Because certain Open Beagle primitives have the argument types hard\fB-c\fRoded, vectorization is left as an option to aid in compatability with future versions.
+.PD 2
+.SH MUTIPLE PARTICLE TYPES
+.PD 1
+PM-Dreamer allows for optimization using multiple particle types as specified with the \fBefixyz\fR file format. Output is given to standard out at the beginning of a simulation with the number of interactions for each combination of particle types (for example):
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	Pair_Particle_Type Count
+.PD 0
+.PP
+.PD 1
+	------------------------
+.PD 0
+.PP
+.PD 1
+	1-1 77
+.PD 0
+.PP
+.PD 1
+	2-1 154
+.PD 0
+.PP
+.PD 1
+	2-2 69
+.PD 0
+.PP
+.PD 1
+	
+.PD 0
+.PP
+.PD 1
+	3body_Particle_Type Count (Center First)
+.PD 0
+.PP
+.PD 1
+	----------------------------------------
+.PD 0
+.PP
+.PD 1
+	1-1-1 33
+.PD 0
+.PP
+.PD 1
+	1-2-1 88
+.PD 0
+.PP
+.PD 1
+	1-2-2 33
+.PD 0
+.PP
+.PD 1
+	2-1-1 44
+.PD 0
+.PP
+.PD 1
+	2-2-1 66
+.PD 0
+.PP
+.PD 1
+	2-2-2 36
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+Optimization using multiple particle types requires the addition of special primitives in order to be effective. For 2-body potentials, E_p can be added to optimize constants for each particle type interaction:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	<Primitive name="E_p" bias="1"/>
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The primitive E_p will be described in any equation as a vector of constants in the same order as the type counts written at the beginning of the optimization. For 3-body combinations, the primitive E_t can also be added:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	<Primitive name="E_t" bias="1"/>
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+In equations written to standard out, each occurance of an E_p or E_t primitive is replaced with a lower case variable (starting with the letter a). The vector corresponding to each variable is written on the following lines (for example):
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	  2-Body: (a*X)/1.7441+b
+.PD 0
+.PP
+.PD 1
+	          a=[-4.0801 -14.4792 -16.8834]
+.PD 0
+.PP
+.PD 1
+	          b=[-8.4213 -21.0239 253.8123]
+.PD 0
+.PP
+.PD 1
+	  3-Body: exp(R1)*(2.3695/c)
+.PD 0
+.PP
+.PD 1
+	          c=[-3.2828 11.8393 17.4884 -15.1295 9.2678 19.6123]
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+Therefore it is recommended to use only upper case names for any other primitives when using multiple particle types. The 2- and 3- body contant vectors have their own mutation operators and registers. The operators for 2- and 3- body (respectively):
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	<GP-MutationEphemeral2COp/>
+.PD 0
+.PP
+.PD 1
+	<GP-MutationEphemeral3COp>
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+and the registers are:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+	<Entry key="gp.mute2c.indpb">0.05</Entry>
+.PD 0
+.PP
+.PD 1
+	<Entry key="gp.mute2c.primit">E_p</Entry>
+.PD 0
+.PP
+.PD 1
+	<Entry key="gp.mute3c.indpb">0.05</Entry>
+.PD 0
+.PP
+.PD 1
+	<Entry key="gp.mute3c.primit">E_t</Entry>
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+If hybrid local search is used during the optimization and gp.hybopt.mtypes is non\fB-z\fRero (default), local optimization of contant vectors will automatically be performed in addition to the primitive specified by the gp.hybopt.primit register. If gp.hybopt.type register is 0 all constants in the vectors will be optimized. If it is 1 all of the contants in 1 chosen vector might be optimized. Optimization of multiple particle types is currently limited to vectorized simulations.The register gp.simplify.maxe is ignored when multiple particle types are used; in this case, the entire dataset is used to determine invariance.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH LIMITATIONS
+.PD 1
+Fitness metrics in PM-Dreamer are limited to those that generate floating points >=0 and <=1 with 1 representing a perfect match to machine precision. For certain functions, the input variables are only checked during initialization and therefore cannot change in the middle of a run. The following epsilon values are currently hard coded in PM-Dreamer:
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fB1e-8\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Epsilon for forward finite difference.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+\fB1e-8 and 1e16\fR 
+.PD 0
+.TP
+.PP
+.PD 1
+ Are the minimum and maximum ranges for test data evaluated using a correlation coefficient or OLS.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+The primitive names E_p and E_t should only be used in optimizations involving multiple particle types as described above. The register gp.simplify.maxe is ignored when multiple particle types are used; in this case, the entire dataset is used to determine invariance.
+.PD 0
+.PP
+.PD 1
+
+.PD 0
+.PP
+.PD 1
+
+.PD 2
+.SH AUTHORS
+.PD 1
+W. Michael Brown

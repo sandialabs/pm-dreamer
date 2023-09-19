@@ -1,0 +1,82 @@
+All sample data files in this directory are named according to their filetype:
+
+efxyz     ---- 2- or 3-body target functions with energy and force data
+pair      ---- 2-body target functions with explicit variable specification
+twothree  ---- 3-body target functions with explicit variable specification
+
+2-Body-Interactions describe the range of the number of interactions in the
+dataset for the energy calculation (range for force in parens).
+
+Additional details can be found in comments within the data files.
+
+
+-------------------------------------------------------------------------------
+- 2-BODY SINGLE PARTICLE TYPE: LENNARD-JONES - (epsilon=1, sigma=1)
+-------------------------------------------------------------------------------
+Filename    Periodic Datapoints Atoms 2-Body-Interactions 3-Body-Interactions
+-------------------------------------------------------------------------------
+lj1.pair    No       10         N/A   55-65               N/A
+lj2.pair    No       10         N/A   55-65               N/A
+lj3.pair    No       20         N/A   1                   N/A
+lj3.pair    No       20         N/A   1                   N/A
+lj4.pair    No       20         N/A   2                   N/A
+lj5.pair    No       5          25    55-65               N/A
+lj5.efxyz   No       5          25    55-65 (8-10)        N/A
+lj6.pair    No       50         25    52-104              N/A
+lj6.efxyz   No       50         25    52-104 (7-16)       N/A
+lj7.efxyz   No       4          6     2-5 (1-3)           N/A
+lj8.efxyz   Yes      10         32    863-880(52-60)      N/A
+
+
+-------------------------------------------------------------------------------
+- 3-BODY SINGLE PARTICLE TYPE: Made up function: 
+-    f=sum(4.32*r^2+2.36)+sum(-1.51*(r1*r2+a)+.045)
+-------------------------------------------------------------------------------
+Filename             Datapoints Atoms 2-Body-Interactions 3-Body-Interactions
+-------------------------------------------------------------------------------
+madeup.twothree      10         N/A   1-6                 1-5
+
+
+-------------------------------------------------------------------------------
+- 3-BODY SINGLE PARTICLE TYPE: Simple Stillinger-Weber (Silicon)
+-       2-Body: [41.7771*[X^-4]]-3.60048
+-       3-Body: 45.5343*[[A--0.333333]^2]
+-------------------------------------------------------------------------------
+Filename      Periodic Datapoints Atoms 2-Body-Interactions 3-Body-Interactions
+-------------------------------------------------------------------------------
+nsi5.efxyz    Yes      10         8     25-34               134-258
+nsi6.efxyz    Yes      55         8     28-35               169-277
+nsi7.efxyz    Yes      55         64    218-253             1309-1794
+
+
+-------------------------------------------------------------------------------
+- 3-BODY SINGLE PARTICLE TYPE: Full Stillinger-Weber  (Silicon)
+-------------------------------------------------------------------------------
+Filename      Periodic Datapoints Atoms 2-Body-Interactions 3-Body-Interactions
+-------------------------------------------------------------------------------
+si1.twothree  No       5          8     6-21                10-94
+si1.efxyz     No       5          8     6-21                10-94
+si2.twothree  No       20         8     9-21                13-86
+si2.efxyz     No       20         8     9-21                13-86
+si3.efxyz     No       10         8     10-21               24-94
+si4.twothree  No       10         8     9-20                13-84
+si4.efxyz     No       10         8     9-20                13-84
+si5.efxyz     Yes      10         8     25-34               134-258
+si6.efxyz     Yes      55         8     28-35               169-277
+si7.efxyz     Yes      55         64    218-253             1309-1794
+
+-------------------------------------------------------------------------------
+- 2-BODY MULTIPLE PARTICLE TYPE: Made up functions
+-    1. energy=r*sigma; sigma=[3 3 3];
+-    2. energy=r*sigma; sigma=[2 3 4];
+-    3. energy2=r*sigma2; energy3=sigma3*(r1*r2+a); 
+-       sigma2=[8 9 10], sigma3=[2 2 2 2 2 2]
+-    4. energy2=r*sigma2; energy3=sigma3*(r1*r2+a); 
+-       sigma2=[8 9 10], sigma3=[2 3 4 5 6 7]
+-------------------------------------------------------------------------------
+Filename      Periodic Datapoints Atoms 2-Body-Interactions 3-Body-Interactions
+-------------------------------------------------------------------------------
+types1.efixyz No       100        2     1                   0
+types2.efixyz No       100        2     1                   0
+types3.efixyz No       100        3     3                   3
+types4.efixyz No       100        3     3                   3

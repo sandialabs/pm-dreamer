@@ -1,0 +1,12 @@
+<html>
+  <body>
+    <script>
+      function closeAndRefresh() {
+        window.close();
+	opener.location.replace('index.php?request=filemanager');
+      }
+      self.setTimeout('closeAndRefresh();', 2000);
+    </script>
+    <center>Report generated!</center>
+  </body>
+</html>

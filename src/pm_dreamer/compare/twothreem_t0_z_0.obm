@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3" generation="6" deme="0">
+  <!--Created by MilestoneWriteOp operator-->
+  <!--System: configuration of the system-->
+  <System>
+    <Logger/>
+    <ModuleVector/>
+    <PrimitiveSuperSet>
+      <PrimitiveSet>
+        <Primitive name="ADD" bias="1"/>
+        <Primitive name="SUB" bias="1"/>
+        <Primitive name="MUL" bias="1"/>
+        <Primitive name="DIV" bias="1"/>
+        <Primitive name="POW" bias="1"/>
+        <Primitive name="EXP" bias="1"/>
+        <Primitive name="LOG" bias="1"/>
+        <Primitive name="ABS" bias="1"/>
+        <Primitive name="X" bias="1"/>
+        <Primitive name="R1" bias="1"/>
+        <Primitive name="R2" bias="1"/>
+        <Primitive name="A" bias="1"/>
+        <Primitive name="E_d" bias="1"/>
+        <Primitive name="E_p" bias="1"/>
+        <Primitive name="E_t" bias="1"/>
+      </PrimitiveSet>
+    </PrimitiveSuperSet>
+    <Randomizer seed="1">
+      4289111503,2185119420,1808708263,3741279519,3426795071,1227361971,3822584415,1973887031,2217802160,4120431954,72340601,1271433332,629172710,2894746664,2735944925,239881849,3905323990,1557695830,2191078390,1229417503,1713368400,4263598421,2510671626,1376054896,111930435,2511409730,109724297,455293763,61885966,440491816,3364502919,31764565,2541768646,663978522,2081450259,599601521,3253893998,2264718821,2899507536,2957673693,28245159,449307837,3875463429,326718405,2562514617,2552577134,2366823413,3198929440,2452272245,1611247680,3931117976,2288906121,759120420,2057936884,3931171244,843406324,3807953666,207178783,362964941,1480368828,3091216742,3152279300,1628823376,3685795874,1774059254,1135671870,3895480275,1660410008,1109643794,1499364565,1855670612,1622448913,900818736,2939911442,483496560,2688464366,3671499884,3769807152,3795643854,680252190,2711365490,1590801225,3361335715,1936165687,3394117931,1890802164,653344631,3805503280,1588075922,1391403309,1549450184,4122300660,3403388920,4197716703,3441321562,1768050452,2564063380,79949634,3947324208,1185588377,3982229440,25392170,2846950730,699240115,4150133187,2555842659,4251699856,931543259,370975557,324926561,2651183202,3539490365,122237355,2800919928,1285806711,3015928412,3794773267,231160733,3894385050,2022430341,3519105725,1433330274,1951158605,1986273458,3322494195,3553051129,3771681464,818293134,1196037687,3516023552,335122373,4156472413,408200849,3027630300,1324000499,4092951806,3778020607,1677645448,2247648730,1144979123,3026435239,1413837491,3414867430,948971541,2636753895,2986034143,3742331559,1926472727,1437152028,2190087407,2112764301,1162338825,692090779,193487542,1946001068,3700441995,761750898,1747087813,1807867987,647200829,1658347126,571230326,288701852,337208153,2814438311,272740836,1891203707,2697783861,1335665304,952557669,4182363674,3097274387,3780807209,2981702788,579665969,2503033839,1667061150,725733157,2905987456,3003976245,3215132110,338632734,2282381215,2005349356,2786140205,2689439449,4019606574,2257693276,1506951119,985254202,3340237202,1405743578,1349308348,4009115380,803064669,1879422466,3060259566,825646309,4178046065,3845146015,2137451923,1559359623,435581328,4213478896,3457090118,671656532,4082792041,1306213143,4120246113,2833503402,3394890983,888360122,1539882124,1688294722,3042431204,1641178486,2810466037,3265035290,878810260,3017404199,1503757026,2295046497,3057104673,2578431948,1852424026,1461130818,1819389211,1788753162,732266339,2648485671,1859246981,3447021999,1825992352,4268723833,3115837946,1969874384,2264440723,265634253,1861082891,2749379419,3781385571,2985345303,3486284603,1366636911,3147071629,3303154256,2054417453,1393745339,1111525937,2177370029,608420626,1307396305,1737828497,645075510,426981736,2732642463,3134778583,328151563,1701170852,2608363442,1710312092,2961897787,2383196457,3428142971,1072027813,161785195,3871648408,1896820597,2393389534,3432198472,3828602556,140485769,1591919987,4085156134,425812290,4255290202,1669431305,1899089745,4184150328,1620530366,4223691061,3162980275,1096428479,1648236500,4108300413,3879001551,3752104866,2165527148,2131532906,1824970708,1587220237,1090378601,190352280,3129467727,3387394111,1338286192,444426694,3958861987,4051309138,3340321949,2890206644,2132654915,185948571,987739839,443183155,3298064714,1727931938,1915451430,4260959221,2554849723,1108654813,1667792393,2246500256,869542191,2525123668,86275422,4292532230,3800878939,771872187,562317487,104094737,792162799,2385781003,536198665,1188648058,47791646,729496179,4144230475,1712236288,3955219387,3964023449,1810830601,3396051683,980044022,2367656642,2025733140,947570838,281950677,2764499034,2823554443,83268573,2110428826,2099329740,2747001847,2604474349,1266576102,2297692662,1977052264,1463148933,2044371213,883775157,4277636172,3827705854,1574146509,1974627183,2937998440,2169288650,2727121977,439496154,2113204398,4135357245,2365285180,1035512338,1855302977,849291605,1281720175,3791089141,3256618275,2207594399,3568673192,2227153498,987538833,1072870356,848381866,38885753,2111829053,3355618447,1708998168,3516748342,2809984846,1313373524,3867972688,284882384,787975702,2132219603,1521181937,1125847285,2275201760,1884531651,1202237715,403663796,260395703,1407056439,3864590243,4033259903,1926933942,620590540,3599862524,2091277676,138862826,1647883126,2049786745,2577757671,2692943841,875045919,3566779,806135815,1083238093,2028089154,3383694575,775953101,3081214087,3252220304,3882647317,3579213748,3452660858,3767754745,2373995493,3474397337,1657252863,4059239709,1862851242,1634067316,902278413,4162059153,4156037592,3494005051,3571123168,1028131163,3985391358,2216691832,1258534441,161133999,2400628828,3704085293,1654870771,363866628,736587014,636228057,3763819016,1768427908,1071822326,2202897733,904089704,4126778668,2660212734,2662932448,3349438310,1672772983,2795656208,3214697439,1143484174,1591869311,1946039983,1130578876,1126541755,3616809285,30717635,2806603322,3318793503,117077352,3001996929,1933475035,949034377,2883679037,50204753,961870983,1278020415,369618795,1386750607,3538307967,4176881920,2741058279,857516999,4024934857,1564393113,3220419892,1946956021,2230916978,889257569,3197516869,1062569666,3857515996,4182425822,329423360,1343120379,3030510177,3314317033,2055703201,3118692036,4067783796,1276691471,3157123478,3224241847,38733590,1457218480,4125553755,1947315249,1704248149,686691609,1852856388,2318774705,2570155815,4105672023,3490572779,3144750711,1358288667,2172114471,3512085489,1769855267,2675454968,615579147,864002927,3633412694,4094487603,4178293415,2653218105,4226154221,54499531,1962470386,1321505002,3376236977,2200183654,204462175,190091319,2920691053,1443112923,1325376101,2994784615,3889189630,2750736046,3971344596,1687263045,2805842296,628512755,234235830,1397866877,1875774340,1037963035,4250984070,3592266644,59917822,3576666173,1201714806,166971755,445734347,1760121422,974391648,2973469064,1081174475,2930444087,65070871,756045165,1349999790,1088990654,1267222526,2562282782,3144583022,2784338763,1064802473,2408573710,594628946,540097288,2620222670,1405822130,1440080572,2026279503,2669135883,3535783296,1486983440,2417648085,3176936520,1323707067,116592011,3252696322,2918182693,1982059156,732508622,2419843413,3823866690,2206660869,1047344339,4023625239,2265798261,2733140328,3567619390,2078606401,208814804,1976558105,1124124778,1883992824,4263513225,3440570246,533195427,1508648443,597623781,1277494049,46616271,3637798447,290882924,3546418464,1061082517,1635583660,3083029123,4081447935,289085536,483267750,310981704,722623634,1659571181,2737498144,4200513487,1242632313,1071703565,3501944637,1783065950,2239490466,2714379325,458345457,2525411729,868867515,2818263603,2704903788,2183567348,467
+    </Randomizer>
+    <Register>
+      <!--ec.conf.dump [String]: Filename used to dump the configuration. A configuration dump means that a configuration file is written with the evolver (including the composing operators) and the register (including the registered parameters and their default values). No evolution is conducted on a configuration dump. An empty string means no dump.-->
+      <Entry key="ec.conf.dump"/>
+      <!--ec.conf.file [String]: The name of a configuration file containing evolver and parameter values. A typical configuration file can be created with parameter "ec.conf.dump".-->
+      <Entry key="ec.conf.file">three-mtype.conft</Entry>
+      <!--ec.hof.demesize [UInt]: Number of individuals kept in each deme's hall-of-fame (best individuals so far). Note that a hall-of-fame contains only copies of the best individuals so far and is not used by the evolution process.-->
+      <Entry key="ec.hof.demesize">0</Entry>
+      <!--ec.hof.vivasize [UInt]: Number of individuals kept in vivarium's hall-of-fame (best individuals so far). Note that a hall-of-fame contains only copies of the best individuals so far and is not used by the evolution process.-->
+      <Entry key="ec.hof.vivasize">1</Entry>
+      <!--ec.init.seedsfile [String]: Name of file to use for seeding the evolution with crafted individual. An empty string means no seeding.-->
+      <Entry key="ec.init.seedsfile"/>
+      <!--ec.mig.mpi_interval [UInt]: Interval between each MPI migration, in number of generations. An interval of 0 disables migration.-->
+      <Entry key="ec.mig.mpi_interval">2</Entry>
+      <!--ec.mig.mpi_size [UInt]: Number of individuals migrating between each MPI proc, at a each migration.-->
+      <Entry key="ec.mig.mpi_size">5</Entry>
+      <!--ec.mig.mpi_split [UInt]: Size of independent groups used for migration. When 0, migration can occur between all islands. When non-zero, migration only occurs between islands in groups of the specified size (with sequential ranks in the same group. -->
+      <Entry key="ec.mig.mpi_split">0</Entry>
+      <!--ec.pop.size [UIntArray]: Number of demes and size of each deme of the population. The format of an UIntArray is S1,S2,...,Sn, where Si is the ith value. The size of the UIntArray is the number of demes present in the vivarium, while each value of the vector is the size of the corresponding deme.-->
+      <Entry key="ec.pop.size">50</Entry>
+      <!--ec.rand.seed [Long]: Random Seed-->
+      <Entry key="ec.rand.seed">1</Entry>
+      <!--ec.repro.prob [Float]: Probability that an individual is reproducted as is, without modification. This parameter is useful only in selection and initialization operators that are composing a breeder tree.-->
+      <Entry key="ec.repro.prob">0.05</Entry>
+      <!--ec.sel.tournsize [UInt]: Number of participants for tournament selection.-->
+      <Entry key="ec.sel.tournsize">7</Entry>
+      <!--ec.term.maxfitness [Float]: Fitness value to reach before stopping evolution.-->
+      <Entry key="ec.term.maxfitness">1</Entry>
+      <!--ec.term.maxgen [UInt]: Maximum number of generations for the evolution.-->
+      <Entry key="ec.term.maxgen">6</Entry>
+      <!--ec.term.maxtime [UInt]: Maximum number of minutes for the evolution.-->
+      <Entry key="ec.term.maxtime">120</Entry>
+      <!--gp.cx.distrpb [Float]: Probability that a crossover point is a branch (node with sub-trees). Value of 1.0 means that all crossover points are branches, and value of 0.0 means that all crossover points are leaves.-->
+      <Entry key="gp.cx.distrpb">0.9</Entry>
+      <!--gp.cx.indpb [Float]: Individual crossover probability at each generation.-->
+      <Entry key="gp.cx.indpb">0.8</Entry>
+      <!--gp.hybopt.indpb [Float]: Ephemeral hybrid optimization probability for an individual. A ephemeral hydrib optimization to change the value of a specific primitive.-->
+      <Entry key="gp.hybopt.indpb">0.15</Entry>
+      <!--gp.hybopt.maxi [UInt]: Maximum iterations for hybrid optimization. -->
+      <Entry key="gp.hybopt.maxi">10</Entry>
+      <!--gp.hybopt.mtypes [UInt]: Perform optimization for E_p and E_t. -->
+      <Entry key="gp.hybopt.mtypes">1</Entry>
+      <!--gp.hybopt.primit [String]: Name of the ephemeral primitive for which the values are modified by the ephemeral mutation operator.-->
+      <Entry key="gp.hybopt.primit">E_d</Entry>
+      <!--gp.hybopt.simplify [UInt]: Simplify before optimization. If 0, no simplification is performed.-->
+      <Entry key="gp.hybopt.simplify">0</Entry>
+      <!--gp.hybopt.type [UInt]: Ephemeral hybrid optimization type. If 0, all ephemeral nodes are optimized in a multidimensional minimization. Otherwise a random node is chosen.-->
+      <Entry key="gp.hybopt.type">0</Entry>
+      <!--gp.init.maxargs [UIntArray]: Maximum number of arguments in GP tree. Tree arguments are is usually useful with ADFs (and similar stuff).-->
+      <Entry key="gp.init.maxargs">0,2</Entry>
+      <!--gp.init.maxdepth [UInt]: Maximum depth for newly initialized trees.-->
+      <Entry key="gp.init.maxdepth">4</Entry>
+      <!--gp.init.maxtree [UInt]: Maximum number of GP tree in newly initialized individuals. More than one tree is usually useful with ADFs (and other ADx).-->
+      <Entry key="gp.init.maxtree">1</Entry>
+      <!--gp.init.minargs [UIntArray]: Minimum number of arguments in GP tree. Tree arguments are is usually useful with ADFs a(nd similar stuff).-->
+      <Entry key="gp.init.minargs">0,2</Entry>
+      <!--gp.init.mindepth [UInt]: Minimum depth for newly initialized trees.-->
+      <Entry key="gp.init.mindepth">3</Entry>
+      <!--gp.init.mintree [UInt]: Minimum number of GP tree in newly initialized individuals. More than one tree is usually useful with ADFs (and other ADx).-->
+      <Entry key="gp.init.mintree">1</Entry>
+      <!--gp.mute2c.indpb [Float]: Ephemeral mutation probability for an individual. A ephemeral mutation change the value of a specific primitive.-->
+      <Entry key="gp.mute2c.indpb">0.15</Entry>
+      <!--gp.mute2c.primit [String]: Name of the ephemeral primitive for which the values are modified by the ephemeral mutation operator.-->
+      <Entry key="gp.mute2c.primit">E_p</Entry>
+      <!--gp.mute3c.indpb [Float]: Ephemeral mutation probability for an individual. A ephemeral mutation change the value of a specific primitive.-->
+      <Entry key="gp.mute3c.indpb">0.15</Entry>
+      <!--gp.mute3c.primit [String]: Name of the ephemeral primitive for which the values are modified by the ephemeral mutation operator.-->
+      <Entry key="gp.mute3c.primit">E_t</Entry>
+      <!--gp.mutephdbl.indpb [Float]: Ephemeral mutation probability for an individual. A ephemeral mutation change the value of a specific primitive.-->
+      <Entry key="gp.mutephdbl.indpb">0.05</Entry>
+      <!--gp.mutephdbl.primit [String]: Name of the ephemeral primitive for which the values are modified by the ephemeral mutation operator.-->
+      <Entry key="gp.mutephdbl.primit">E_d</Entry>
+      <!--gp.mutshrink.indpb [Float]: Shrink mutation probability for an individual. Shrink mutation consists in replacing a branch (a node with one or more arguments) with one of his child node. This erases the chosen node and the other child nodes.-->
+      <Entry key="gp.mutshrink.indpb">0.05</Entry>
+      <!--gp.mutsst.distrpb [Float]: Probability that a swap subtree is internal (the mutation occurs between three points, where the 2nd point is in the 1st point's subtree, and the 3rd point is in the 2nd point's subtree) vs being external (the mutation occurs between two points, where both points are not within the other's subtree). Value of 1.0 means that the swap subtrees mutations are all internal while value of 0.0 means that swap subtrees mutations are all external.-->
+      <Entry key="gp.mutsst.distrpb">0.5</Entry>
+      <!--gp.mutsst.indpb [Float]: Swap subtree mutation probability for an individual. A swap subtree mutation consists to swap two subtrees of a tree in an individual.-->
+      <Entry key="gp.mutsst.indpb">0</Entry>
+      <!--gp.mutstd.indpb [Float]: Standard mutation probability for an individual. A standard mutation replaces a sub-tree with a randomly generated one.-->
+      <Entry key="gp.mutstd.indpb">0.05</Entry>
+      <!--gp.mutstd.maxdepth [UInt]: Maximum depth for standard mutation. A standard mutation replaces a sub-tree with a randomly generated one.-->
+      <Entry key="gp.mutstd.maxdepth">5</Entry>
+      <!--gp.mutswap.distrpb [Float]: Probability that a swap mutation point is a branch (node with sub-trees). Value of 1.0 means that all swap mutation points are branches, and value of 0.0 means that all swap mutation points are leaves. Swap mutation consists in exchanging the primitive associated to a node by one having the same number of arguments.-->
+      <Entry key="gp.mutswap.distrpb">0.5</Entry>
+      <!--gp.mutswap.indpb [Float]: Swap mutation probability for an individual. Swap mutation consists in exchanging the primitive associated to a node by one having the same number of arguments.-->
+      <Entry key="gp.mutswap.indpb">0.05</Entry>
+      <!--gp.olscorrect.indpb [Float]: Simplify mutation probability for an individual. Simplify mutation consists in replacing a invariant branch with the constant it evaluates to.-->
+      <Entry key="gp.olscorrect.indpb">0.2</Entry>
+      <!--gp.olscorrect.interval [UInt]: Interval in generations between OLS correction.-->
+      <Entry key="gp.olscorrect.interval">2</Entry>
+      <!--gp.olscorrect.name [String]: Name of the ephemeral primitive to be used to replace branches during correction.-->
+      <Entry key="gp.olscorrect.name">E_d</Entry>
+      <!--gp.simplify.eps [Double]: Threshold for simplification invariance. -->
+      <Entry key="gp.simplify.eps">1e-30</Entry>
+      <!--gp.simplify.indpb [Float]: Simplify mutation probability for an individual. Simplify mutation consists in replacing a invariant branch with the constant it evaluates to.-->
+      <Entry key="gp.simplify.indpb">1</Entry>
+      <!--gp.simplify.interval [UInt]: Interval in generations between simplification.-->
+      <Entry key="gp.simplify.interval">0</Entry>
+      <!--gp.simplify.maxe [UInt]: Maximum number of function evaluations for simplification of a single tree.-->
+      <Entry key="gp.simplify.maxe">0</Entry>
+      <!--gp.simplify.name [String]: Name of the ephemeral primitive for to be used to replace branches during simplification.-->
+      <Entry key="gp.simplify.name">E</Entry>
+      <!--gp.tree.maxdepth [UInt]: Maximum allowed depth for the trees.-->
+      <Entry key="gp.tree.maxdepth">4</Entry>
+      <!--gp.try [UInt]: Maximum number of attempts to modify a GP tree in a genetic operation. As there is topological constraints on GP trees (i.e. tree depth limit), it is often necessary to try a genetic operation several times.-->
+      <Entry key="gp.try">2</Entry>
+      <!--lg.console.level [Int]: Console out-->
+      <Entry key="lg.console.level">0</Entry>
+      <!--lg.file.level [UInt]: Log level used for file output generation. Log levels available are: (0) no log, (1) basic logs, (2) stats, (3) general informations, (4) details on operations, (5) trace of the algorithms, (6) verbose, (7) debug (enabled only in full debug mode).-->
+      <Entry key="lg.file.level">3</Entry>
+      <!--lg.file.name [String]: Log Filename-->
+      <Entry key="lg.file.name">twothreem_t0_z_0.log</Entry>
+      <!--lg.show.class [Bool]: Flag whether class name is outputed in the logs.-->
+      <Entry key="lg.show.class">0</Entry>
+      <!--lg.show.level [Bool]: Flag whether logging level in outputed in the logs.-->
+      <Entry key="lg.show.level">0</Entry>
+      <!--lg.show.type [Bool]: Flag whether message type is outputed in the logs.-->
+      <Entry key="lg.show.type">0</Entry>
+      <!--ms.restart.file [String]: Name of the milestone file from which the evolution should be restarted. An empty string means no restart.-->
+      <Entry key="ms.restart.file"/>
+      <!--ms.write.compress [Bool]: If true, this flag indicates that milestones will be compressed with gzip. Otherwise, each milestone are kept plain text.-->
+      <Entry key="ms.write.compress">0</Entry>
+      <!--ms.write.interval [UInt]: Milestone saving interval (in number of generations). When zero, only the last generation milestone is saved.-->
+      <Entry key="ms.write.interval">100</Entry>
+      <!--ms.write.over [Bool]: If true, this flag indicates that old milestones should be over-written. Otherwise, each milestone has a different suffix.-->
+      <Entry key="ms.write.over">1</Entry>
+      <!--ms.write.perdeme [Bool]: If true, this flag indicates that separate milestones should be written after each demes processing. Otherwise milestones are written after the processing of a complete populations.-->
+      <Entry key="ms.write.perdeme">0</Entry>
+      <!--ms.write.prefix [String]: Milestone Filename-->
+      <Entry key="ms.write.prefix">twothreem_t0_z_0</Entry>
+    </Register>
+  </System>
+  <!--Evolver: configuration of the algorithm-->
+  <Evolver>
+    <BootStrapSet>
+      <IfThenElseOp parameter="ms.restart.file" value="">
+        <PositiveOpSet>
+          <GP-InitHalfOp repropb="ec.repro.prob"/>
+          <EnergyOp/>
+          <GP-StatsCalcFitSimpleMPIOp/>
+        </PositiveOpSet>
+        <NegativeOpSet>
+          <MilestoneReadOp/>
+        </NegativeOpSet>
+      </IfThenElseOp>
+      <TermMaxGenOp/>
+      <TermMaxFitnessOp fitness="1"/>
+      <MPITerminateOp/>
+      <MilestoneWriteOp/>
+    </BootStrapSet>
+    <MainLoopSet>
+      <SelectTournamentOp repropb="ec.repro.prob"/>
+      <GP-CrossoverOp matingpb="gp.cx.indpb" distrpb="gp.cx.distrpb"/>
+      <GP-MutationStandardOp mutationpb="gp.mutstd.indpb" maxdepth="gp.mutstd.maxdepth"/>
+      <GP-MutationShrinkOp mutationpb="gp.mutshrink.indpb"/>
+      <GP-MutationSwapOp mutationpb="gp.mutswap.indpb" distrpb="gp.mutswap.distrpb"/>
+      <GP-MutationSwapSubtreeOp mutationpb="gp.mutsst.indpb" distrpb="gp.mutsst.distrpb"/>
+      <GP-MutationEphemeralDoubleOp mutationpb="gp.mutephdbl.indpb" primitname="gp.mutephdbl.primit"/>
+      <GP-MutationEphemeral2COp mutationpb="gp.mute2c.indpb" primitname="gp.mute2c.primit"/>
+      <GP-MutationEphemeral3COp mutationpb="gp.mute3c.indpb" primitname="gp.mute3c.primit"/>
+      <GP-HybridOptOp mutationpb="gp.hybopt.indpb" primitname="gp.hybopt.primit"/>
+      <GP-OLSCorrectOp mutationpb="gp.olscorrect.indpb"/>
+      <EnergyOp/>
+      <MigrationMPIOp/>
+      <GP-StatsCalcFitSimpleMPIOp/>
+      <TermMaxGenOp/>
+      <TermMaxFitnessOp fitness="1"/>
+      <TermMaxTimeOp/>
+      <MPITerminateOp/>
+      <MilestoneWriteOp/>
+    </MainLoopSet>
+  </Evolver>
+  <!--Vivarium: evolved population-->
+  <Vivarium>
+    <Stats id="vivarium" generation="6" popsize="150">
+      <Item key="processed">107</Item>
+      <Item key="total-processed">801</Item>
+      <Measure id="fitness">
+        <Avg>0.755324</Avg>
+        <Std>0.239243</Std>
+        <Max>0.893754</Max>
+        <Min>0.0845211</Min>
+      </Measure>
+      <Measure id="treedepth">
+        <Avg>4.18667</Avg>
+        <Std>0.972002</Std>
+        <Max>7</Max>
+        <Min>2</Min>
+      </Measure>
+      <Measure id="treesize">
+        <Avg>6.48667</Avg>
+        <Std>3.01169</Std>
+        <Max>19</Max>
+        <Min>2</Min>
+      </Measure>
+    </Stats>
+    <HallOfFame size="1">
+      <Member generation="2" deme="0">
+        <Individual size="1">
+          <Fitness type="simple">0.893754</Fitness>
+          <Genotype type="gptree" size="6" depth="4" primitSetId="0" nbArgs="0"><SUB><ABS><MUL><X/><E_d value="16.03058403916657"/></MUL></ABS><E_d value="-0.6919079412672293"/></SUB></Genotype>
+        </Individual>
+      </Member>
+    </HallOfFame>
+    <Population size="1">
+      <Deme>
+        <Stats id="deme1" generation="6" popsize="50">
+          <Item key="processed">35</Item>
+          <Item key="total-processed">262</Item>
+          <Measure id="fitness">
+            <Avg>0.700493</Avg>
+            <Std>0.27754</Std>
+            <Max>0.893048</Max>
+            <Min>0.0845211</Min>
+          </Measure>
+          <Measure id="treedepth">
+            <Avg>4.16</Avg>
+            <Std>1.0759</Std>
+            <Max>7</Max>
+            <Min>2</Min>
+          </Measure>
+          <Measure id="treesize">
+            <Avg>5.76</Avg>
+            <Std>2.19052</Std>
+            <Max>13</Max>
+            <Min>2</Min>
+          </Measure>
+        </Stats>
+        <HallOfFame size="0"/>
+        <MigrationBuffer size="0"/>
+        <Population size="50">
+          <Individual size="1">
+            <Fitness type="simple">0.593219</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><SUB><EXP><X/></EXP><X/></SUB></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92256209440529"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.0845211</Fitness>
+            <Genotype type="gptree" size="6" depth="4" primitSetId="0" nbArgs="0"><ABS><MUL><MUL><X/><E_d value="14.92413872666657"/></MUL><E_d value="14.92316216416657"/></MUL></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92353865690529"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.187209</Fitness>
+            <Genotype type="gptree" size="9" depth="6" primitSetId="0" nbArgs="0"><ABS><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></MUL></ADD></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.572092</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><X/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="-14.92718084901571"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92256209440529"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="4" depth="3" primitSetId="0" nbArgs="0"><ABS><MUL><X/><E_d value="14.92256209440529"/></MUL></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.187198</Fitness>
+            <Genotype type="gptree" size="9" depth="6" primitSetId="0" nbArgs="0"><LOG><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></MUL></ADD></LOG></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.83919</Fitness>
+            <Genotype type="gptree" size="8" depth="5" primitSetId="0" nbArgs="0"><ABS><ADD><E_d value="-5.024091316822524"/><MUL><E_d value="1.333943709483874"/><MUL><X/><E_d value="14.92120903916657"/></MUL></MUL></ADD></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92353865690529"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="4" depth="3" primitSetId="0" nbArgs="0"><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.670251</Fitness>
+            <Genotype type="gptree" size="2" depth="2" primitSetId="0" nbArgs="0"><ABS><E_d value="14.92120903916657"/></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.187198</Fitness>
+            <Genotype type="gptree" size="8" depth="5" primitSetId="0" nbArgs="0"><ABS><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><MUL><X/><E_d value="14.92413872666657"/></MUL></MUL></ADD></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.187216</Fitness>
+            <Genotype type="gptree" size="8" depth="5" primitSetId="0" nbArgs="0"><ABS><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><MUL><X/><E_d value="14.92256209440529"/></MUL></MUL></ADD></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.67016</Fitness>
+            <Genotype type="gptree" size="2" depth="2" primitSetId="0" nbArgs="0"><ABS><E_d value="14.92413872666657"/></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92256209440529"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.187205</Fitness>
+            <Genotype type="gptree" size="9" depth="6" primitSetId="0" nbArgs="0"><LOG><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><ABS><MUL><X/><E_d value="14.92353865690529"/></MUL></ABS></MUL></ADD></LOG></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.187216</Fitness>
+            <Genotype type="gptree" size="9" depth="6" primitSetId="0" nbArgs="0"><ABS><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><ABS><MUL><X/><E_d value="14.92256209440529"/></MUL></ABS></MUL></ADD></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="4" depth="3" primitSetId="0" nbArgs="0"><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.368534</Fitness>
+            <Genotype type="gptree" size="3" depth="2" primitSetId="0" nbArgs="0"><MUL><X/><E_d value="-12.618950875476"/></MUL></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.630682</Fitness>
+            <Genotype type="gptree" size="8" depth="5" primitSetId="0" nbArgs="0"><LOG><EXP><POW><LOG><X/></LOG><SUB><X/><X/></SUB></POW></EXP></LOG></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.555075</Fitness>
+            <Genotype type="gptree" size="3" depth="2" primitSetId="0" nbArgs="0"><ADD><X/><E_d value="-0.8729597833007574"/></ADD></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.787088</Fitness>
+            <Genotype type="gptree" size="13" depth="5" primitSetId="0" nbArgs="0"><ADD><ADD><E_d value="-5.024091316822524"/><MUL><E_d value="1.333943709483874"/><E_d value="0.06998138389735509"/></MUL></ADD><MUL><E_d value="1.333943709483874"/><MUL><E_d value="1.31802831058462"/><MUL><E_d value="10.61283295948393"/><R1/></MUL></MUL></MUL></ADD></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.790827</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="19.44820407778025"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.566579</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><LOG><ABS><POW><X/><E_d value="12.74287459440529"/></POW></ABS></LOG></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.187209</Fitness>
+            <Genotype type="gptree" size="9" depth="6" primitSetId="0" nbArgs="0"><LOG><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></MUL></ADD></LOG></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.827935</Fitness>
+            <Genotype type="gptree" size="6" depth="4" primitSetId="0" nbArgs="0"><ABS><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><X/></MUL></ADD></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><LOG><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></LOG></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.187198</Fitness>
+            <Genotype type="gptree" size="9" depth="6" primitSetId="0" nbArgs="0"><ABS><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></MUL></ADD></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92316216416657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.572092</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><X/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="4" depth="3" primitSetId="0" nbArgs="0"><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.893048</Fitness>
+            <Genotype type="gptree" size="5" depth="4" primitSetId="0" nbArgs="0"><ABS><ABS><MUL><X/><E_d value="14.92413872666657"/></MUL></ABS></ABS></Genotype>
+          </Individual>
+          <Individual size="1">
+            <Fitness type="simple">0.886473</Fitness>
+            <Genotype type="gptree" size="11" depth="7" primitSetId="0" nbArgs="0"><ABS><ADD><E_d value="4.099883973566862"/><MUL><E_d value="6.173895771620401"/><ABS><MUL><X/><ADD><X/><X/></ADD></MUL></ABS></MUL></ADD></ABS></Genotype>
+          </Individual>
+        </Population>
+      </Deme>
+    </Population>
+  </Vivarium>
+</Beagle>

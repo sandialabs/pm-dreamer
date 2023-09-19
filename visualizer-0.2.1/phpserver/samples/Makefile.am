@@ -1,0 +1,2 @@
+SUBDIRS = onemax symbreg
+

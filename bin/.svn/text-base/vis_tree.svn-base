@@ -1,0 +1,16 @@
+#!/bin/tcsh
+
+# Extract best fitnesses out of log files
+
+if ( $#argv < 1) then
+  echo "USAGE: vis_tree obm_name1 obm_name2 ..."
+  echo "  where obm_name1, obm_name2, etc specify milestone"
+  echo "  files from Open Beagle."
+  exit(1);
+endif
+
+get_trees $argv[*] | sort -n -r -k 2 | tree2svg > /tmp/tree.svg
+convert /tmp/tree.svg /tmp/tree.png
+kview /tmp/tree.png &
+
+

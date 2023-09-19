@@ -1,0 +1,69 @@
+
+[executer]
+RunInTerminal=true
+
+[Project State]
+clean before build=false
+
+[filenumbers]
+0=139
+1=196
+2=88
+3=1
+4=213
+5=68
+6=56
+7=198
+8=94
+9=1
+10=883
+11=351
+12=127
+13=329
+14=331
+15=87
+16=56
+17=161
+18=36
+19=54
+
+[filemarkers]
+0=
+1=
+2=
+3=
+4=
+5=
+6=
+7=
+8=
+9=
+10=
+11=
+12=
+13=
+14=
+15=
+16=
+17=
+18=
+19=
+
+[File View]
+filter.file.unmatch=*.so *.o *.a *.la
+filter.file.ignore.hidden=0
+filter.dir.ignore.hidden=0
+
+[Project Tree]
+0=0
+1=0:0
+2=0:1
+
+[Symbol Tree]
+0=1
+1=1:11
+2=2
+
+[File Tree]
+0=0
+1=0:0

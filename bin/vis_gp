@@ -1,0 +1,103 @@
+#!/bin/tcsh
+
+# Script for visualizing beagle GP output
+# Mike Brown (wmbrown@sandia.gov)
+
+if ( $#argv != 1) then
+  echo "USAGE: vis_gp vis_dir"
+  echo "  where vis_dir specifies the location of browser output files."
+  echo "  If the directory does not exist, it will be created."
+  exit(1);
+endif
+
+set tdir = $argv[1]
+if (-e $tdir) then
+  if (-d $tdir) then
+    echo "Target directory exists...";
+  else
+    echo "Target directory cannot be an file.";
+    exit(1);
+  endif
+else
+  echo "Creating directory $tdir"
+  mkdir -p $tdir
+endif
+
+rm -rf $tdir/fitness.txt $tdir/gp_html*
+
+echo "Creating root html file headers..."
+echo "<\041DOCTYPE html PUBLIC \042-//W3C//DTD HTML 4.01 Transitional//EN\042>" > $tdir/index.html
+echo "<html>" >> $tdir/index.html
+echo "<head>" >> $tdir/index.html
+echo "  <meta content=\042text/html; charset=ISO-8859-1\042" >> $tdir/index.html
+echo " http-equiv=\042content-type\042>" >> $tdir/index.html
+echo "  <title>GP_Force</title>" >> $tdir/index.html
+echo "</head>" >> $tdir/index.html
+echo "<body>" >> $tdir/index.html
+echo "<h1 style=\042text-align: center;\042><span style=\042font-weight: bold;\042>GP_FORCE" >> $tdir/index.html
+echo "RESULTS</span></h1>" >> $tdir/index.html
+echo "<ul>" >> $tdir/index.html
+echo "  <li><a href=\042fitness.txt\042>Best Fitness for each Island</a></li>" >> $tdir/index.html
+echo "  <li><a href=\042trees.html\042>Best Tree for each Island</a></li>" >> $tdir/index.html
+echo "  <li>Statistics for Island:</li>" >> $tdir/index.html
+echo "  <ul>" >> $tdir/index.html
+
+echo "<\041DOCTYPE html PUBLIC \042-//W3C//DTD HTML 4.01 Transitional//EN\042>" > $tdir/trees.html
+echo "<html>" >> $tdir/trees.html
+echo "<head>" >> $tdir/trees.html
+echo "  <meta content=\042text/html; charset=ISO-8859-1\042" >> $tdir/trees.html
+echo " http-equiv=\042content-type\042>" >> $tdir/trees.html
+echo "  <title>Trees</title>" >> $tdir/trees.html
+echo "</head>" >> $tdir/trees.html
+echo "<body>" >> $tdir/trees.html
+echo "<h1 style=\042text-align: center;\042>GP_FORCE TREES</h1>" >> $tdir/trees.html
+echo "<ul>" >> $tdir/trees.html
+
+set pfiles = `echo gp_force*.log`
+foreach pfile ($pfiles)
+	set rdir=$tdir/gp_html_$pfile:r
+	mkdir $rdir
+	echo "    <li><a href=\042./gp_html_$pfile:r/index.html\042>$pfile:r</a></li>" >> $tdir/index.html
+	echo "  <li><a href=\042./gp_html_$pfile:r/tree.png\042>$pfile:r</a></li>" >> $tdir/trees.html
+	echo "Analyzing $pfile:r ..."
+	echo "  Unzipping milestone file..."
+        gunzip `echo $pfile:r.obm.gz`
+	echo "  Extracting fitness..."
+	echo -n "$pfile:r " >> $tdir/fitness.txt
+	sed 's/>Maximum fitness value/Max 1.0/g' $pfile | grep 'Max' | fgrep '.' | sed 's/>/ /g' | sed 's/</ /g' | awk '{print $2}' | sort -n | tail -n 1 >> $tdir/fitness.txt
+	/usr/local/visualizer/bin/beagleviz $pfile $pfile:r.obm -o $rdir
+	set files = `echo $rdir/*.svgz`
+	echo "  Converting images..."
+	foreach file ( $files )
+		convert $file $file:r.png
+	end
+	echo "  Converting html..."
+	set files = `echo $rdir/*.html`
+	foreach file ( $files )
+ 		sed 's/svg+xml/png/g' $file | sed 's/svgz/png/g' > $rdir/t.m;
+        	/bin/mv $rdir/t.m $file
+	end
+	echo "  Converting tree..."
+	grep 'post' $rdir/vivarium.html | head -n 1 | sed 's/"/$/g' | awk -F$ '{print $10}' > $rdir/tree.xml
+	/usr/local/visualizer/bin/tree2svg $rdir/tree.xml $rdir/tree.svg
+	convert $rdir/tree.svg $rdir/tree.png
+end
+
+sort -n -k 2 -r $tdir/fitness.txt > $tdir/tmp.txt; mv -f $tdir/tmp.txt $tdir/fitness.txt
+
+echo "Writing root html file tails..."
+echo "  </ul>" >> $tdir/index.html
+echo "</ul>" >> $tdir/index.html
+echo "<br>" >> $tdir/index.html
+echo "<br>" >> $tdir/index.html
+echo "</body>" >> $tdir/index.html
+echo "</html>" >> $tdir/index.html
+
+echo "</ul>" >> $tdir/trees.html
+echo "<br>" >> $tdir/trees.html
+echo "<br>" >> $tdir/trees.html
+echo "<br>" >> $tdir/trees.html
+echo "</body>" >> $tdir/trees.html
+echo "</html>" >> $tdir/trees.html
+
+echo "\nDone. Output can be viewed in a browser by opening $tdir/index.html"

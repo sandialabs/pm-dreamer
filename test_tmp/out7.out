@@ -1,0 +1,4392 @@
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run00.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:30:41 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211724</Avg>
+          <Std>0.210178</Std>
+          <Max>0.909465</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3605</Avg>
+          <Std>2.79731</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211724</Avg>
+          <Std>0.210178</Std>
+          <Max>0.909465</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3605</Avg>
+          <Std>2.79731</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:32:08 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run01.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:32:10 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211879</Avg>
+          <Std>0.210123</Std>
+          <Max>0.901048</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3475</Avg>
+          <Std>2.80508</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211879</Avg>
+          <Std>0.210123</Std>
+          <Max>0.901048</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3475</Avg>
+          <Std>2.80508</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:33:44 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run02.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:33:46 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.2118</Avg>
+          <Std>0.210138</Std>
+          <Max>0.929174</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.355</Avg>
+          <Std>2.7992</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.2118</Avg>
+          <Std>0.210138</Std>
+          <Max>0.929174</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.355</Avg>
+          <Std>2.7992</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:35:16 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run03.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:35:18 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211714</Avg>
+          <Std>0.210077</Std>
+          <Max>0.907689</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3567</Avg>
+          <Std>2.80071</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211714</Avg>
+          <Std>0.210077</Std>
+          <Max>0.907689</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3567</Avg>
+          <Std>2.80071</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:36:47 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run04.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:36:49 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211963</Avg>
+          <Std>0.210244</Std>
+          <Max>0.864286</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3558</Avg>
+          <Std>2.80176</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211963</Avg>
+          <Std>0.210244</Std>
+          <Max>0.864286</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3558</Avg>
+          <Std>2.80176</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:38:20 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run05.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:38:22 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211624</Avg>
+          <Std>0.210099</Std>
+          <Max>0.975366</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3547</Avg>
+          <Std>2.79952</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211624</Avg>
+          <Std>0.210099</Std>
+          <Max>0.975366</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3547</Avg>
+          <Std>2.79952</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:39:52 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run06.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:39:54 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211757</Avg>
+          <Std>0.210187</Std>
+          <Max>0.898858</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3599</Avg>
+          <Std>2.79835</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211757</Avg>
+          <Std>0.210187</Std>
+          <Max>0.898858</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3599</Avg>
+          <Std>2.79835</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:41:18 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run07.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:41:20 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212065</Avg>
+          <Std>0.210237</Std>
+          <Max>0.901788</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3586</Avg>
+          <Std>2.79955</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212065</Avg>
+          <Std>0.210237</Std>
+          <Max>0.901788</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3586</Avg>
+          <Std>2.79955</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:42:51 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run08.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:42:53 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212152</Avg>
+          <Std>0.210246</Std>
+          <Max>0.89769</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3533</Avg>
+          <Std>2.80013</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212152</Avg>
+          <Std>0.210246</Std>
+          <Max>0.89769</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3533</Avg>
+          <Std>2.80013</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:44:25 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run09.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:44:28 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211569</Avg>
+          <Std>0.210106</Std>
+          <Max>0.889712</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3571</Avg>
+          <Std>2.79725</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211569</Avg>
+          <Std>0.210106</Std>
+          <Max>0.889712</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3571</Avg>
+          <Std>2.79725</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:45:50 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run10.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:45:52 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.2122</Avg>
+          <Std>0.210237</Std>
+          <Max>0.956012</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3547</Avg>
+          <Std>2.80156</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.2122</Avg>
+          <Std>0.210237</Std>
+          <Max>0.956012</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3547</Avg>
+          <Std>2.80156</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:47:23 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run11.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:47:26 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212203</Avg>
+          <Std>0.21035</Std>
+          <Max>0.901109</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3562</Avg>
+          <Std>2.79954</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212203</Avg>
+          <Std>0.21035</Std>
+          <Max>0.901109</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3562</Avg>
+          <Std>2.79954</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:48:57 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run12.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:49:00 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211605</Avg>
+          <Std>0.21018</Std>
+          <Max>0.906678</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3549</Avg>
+          <Std>2.7998</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211605</Avg>
+          <Std>0.21018</Std>
+          <Max>0.906678</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3549</Avg>
+          <Std>2.7998</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:50:29 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run13.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:50:31 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212058</Avg>
+          <Std>0.210278</Std>
+          <Max>0.984644</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3578</Avg>
+          <Std>2.79937</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212058</Avg>
+          <Std>0.210278</Std>
+          <Max>0.984644</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3578</Avg>
+          <Std>2.79937</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:51:56 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run14.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:51:59 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212283</Avg>
+          <Std>0.210233</Std>
+          <Max>0.948856</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3603</Avg>
+          <Std>2.80005</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212283</Avg>
+          <Std>0.210233</Std>
+          <Max>0.948856</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3603</Avg>
+          <Std>2.80005</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:53:29 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run15.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:53:31 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212037</Avg>
+          <Std>0.210205</Std>
+          <Max>0.941465</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3564</Avg>
+          <Std>2.79979</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212037</Avg>
+          <Std>0.210205</Std>
+          <Max>0.941465</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3564</Avg>
+          <Std>2.79979</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:54:55 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run16.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:54:58 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212211</Avg>
+          <Std>0.210208</Std>
+          <Max>0.904487</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3587</Avg>
+          <Std>2.79938</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212211</Avg>
+          <Std>0.210208</Std>
+          <Max>0.904487</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3587</Avg>
+          <Std>2.79938</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:56:30 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run17.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:56:32 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21125</Avg>
+          <Std>0.210077</Std>
+          <Max>0.923859</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3633</Avg>
+          <Std>2.79549</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21125</Avg>
+          <Std>0.210077</Std>
+          <Max>0.923859</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3633</Avg>
+          <Std>2.79549</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:57:58 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run18.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:58:00 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211784</Avg>
+          <Std>0.210069</Std>
+          <Max>0.959783</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3575</Avg>
+          <Std>2.80157</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211784</Avg>
+          <Std>0.210069</Std>
+          <Max>0.959783</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3575</Avg>
+          <Std>2.80157</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 16:59:26 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run19.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 16:59:28 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21189</Avg>
+          <Std>0.210087</Std>
+          <Max>0.975366</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3589</Avg>
+          <Std>2.79737</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21189</Avg>
+          <Std>0.210087</Std>
+          <Max>0.975366</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3589</Avg>
+          <Std>2.79737</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:00:58 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run20.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:01:00 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212141</Avg>
+          <Std>0.210157</Std>
+          <Max>0.984547</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3544</Avg>
+          <Std>2.80214</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212141</Avg>
+          <Std>0.210157</Std>
+          <Max>0.984547</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3544</Avg>
+          <Std>2.80214</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:02:26 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run21.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:02:28 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211952</Avg>
+          <Std>0.210179</Std>
+          <Max>0.925001</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3541</Avg>
+          <Std>2.80011</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211952</Avg>
+          <Std>0.210179</Std>
+          <Max>0.925001</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3541</Avg>
+          <Std>2.80011</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:03:55 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run22.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:03:57 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212334</Avg>
+          <Std>0.210173</Std>
+          <Max>0.908349</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3548</Avg>
+          <Std>2.79985</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212334</Avg>
+          <Std>0.210173</Std>
+          <Max>0.908349</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3548</Avg>
+          <Std>2.79985</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:05:21 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run23.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:05:23 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212263</Avg>
+          <Std>0.210282</Std>
+          <Max>0.901669</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3584</Avg>
+          <Std>2.80178</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212263</Avg>
+          <Std>0.210282</Std>
+          <Max>0.901669</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3584</Avg>
+          <Std>2.80178</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:06:51 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run24.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:06:54 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211676</Avg>
+          <Std>0.210067</Std>
+          <Max>0.988119</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3582</Avg>
+          <Std>2.79637</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211676</Avg>
+          <Std>0.210067</Std>
+          <Max>0.988119</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3582</Avg>
+          <Std>2.79637</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:08:25 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run25.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:08:28 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211471</Avg>
+          <Std>0.210075</Std>
+          <Max>0.956055</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3576</Avg>
+          <Std>2.8004</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211471</Avg>
+          <Std>0.210075</Std>
+          <Max>0.956055</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3576</Avg>
+          <Std>2.8004</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:09:56 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run26.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:09:58 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211916</Avg>
+          <Std>0.2102</Std>
+          <Max>0.910795</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3535</Avg>
+          <Std>2.80317</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211916</Avg>
+          <Std>0.2102</Std>
+          <Max>0.910795</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3535</Avg>
+          <Std>2.80317</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:11:29 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run27.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:11:32 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211966</Avg>
+          <Std>0.210166</Std>
+          <Max>0.930443</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3551</Avg>
+          <Std>2.80096</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211966</Avg>
+          <Std>0.210166</Std>
+          <Max>0.930443</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3551</Avg>
+          <Std>2.80096</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:13:02 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run28.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:13:04 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212026</Avg>
+          <Std>0.210383</Std>
+          <Max>0.911923</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3543</Avg>
+          <Std>2.80115</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212026</Avg>
+          <Std>0.210383</Std>
+          <Max>0.911923</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3543</Avg>
+          <Std>2.80115</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:14:36 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run29.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:14:38 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211557</Avg>
+          <Std>0.210262</Std>
+          <Max>1</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3608</Avg>
+          <Std>2.79719</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211557</Avg>
+          <Std>0.210262</Std>
+          <Max>1</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3608</Avg>
+          <Std>2.79719</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:16:06 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run30.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:16:09 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211951</Avg>
+          <Std>0.210134</Std>
+          <Max>0.901761</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3567</Avg>
+          <Std>2.8008</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211951</Avg>
+          <Std>0.210134</Std>
+          <Max>0.901761</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3567</Avg>
+          <Std>2.8008</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:17:37 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run31.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:17:39 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212235</Avg>
+          <Std>0.2104</Std>
+          <Max>0.942182</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3578</Avg>
+          <Std>2.79996</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212235</Avg>
+          <Std>0.2104</Std>
+          <Max>0.942182</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3578</Avg>
+          <Std>2.79996</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:19:09 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run32.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:19:11 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212131</Avg>
+          <Std>0.21023</Std>
+          <Max>0.942182</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.356</Avg>
+          <Std>2.79877</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212131</Avg>
+          <Std>0.21023</Std>
+          <Max>0.942182</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.356</Avg>
+          <Std>2.79877</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:20:43 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run33.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:20:45 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211822</Avg>
+          <Std>0.210206</Std>
+          <Max>0.954219</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3563</Avg>
+          <Std>2.80285</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211822</Avg>
+          <Std>0.210206</Std>
+          <Max>0.954219</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3563</Avg>
+          <Std>2.80285</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:22:11 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run34.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:22:14 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212183</Avg>
+          <Std>0.210375</Std>
+          <Max>0.888515</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3548</Avg>
+          <Std>2.80158</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212183</Avg>
+          <Std>0.210375</Std>
+          <Max>0.888515</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3548</Avg>
+          <Std>2.80158</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:23:46 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run35.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:23:49 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211973</Avg>
+          <Std>0.210174</Std>
+          <Max>0.919603</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3561</Avg>
+          <Std>2.79998</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211973</Avg>
+          <Std>0.210174</Std>
+          <Max>0.919603</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3561</Avg>
+          <Std>2.79998</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:25:22 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run36.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:25:24 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211865</Avg>
+          <Std>0.21006</Std>
+          <Max>0.964717</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3545</Avg>
+          <Std>2.80191</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211865</Avg>
+          <Std>0.21006</Std>
+          <Max>0.964717</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3545</Avg>
+          <Std>2.80191</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:26:54 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run37.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:26:56 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211687</Avg>
+          <Std>0.210203</Std>
+          <Max>0.984165</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3571</Avg>
+          <Std>2.79682</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211687</Avg>
+          <Std>0.210203</Std>
+          <Max>0.984165</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3571</Avg>
+          <Std>2.79682</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:28:26 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run38.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:28:29 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211912</Avg>
+          <Std>0.210186</Std>
+          <Max>0.893508</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.358</Avg>
+          <Std>2.8004</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211912</Avg>
+          <Std>0.210186</Std>
+          <Max>0.893508</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.358</Avg>
+          <Std>2.8004</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:29:59 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run39.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:30:01 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211872</Avg>
+          <Std>0.210172</Std>
+          <Max>0.95015</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3607</Avg>
+          <Std>2.79506</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211872</Avg>
+          <Std>0.210172</Std>
+          <Max>0.95015</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3607</Avg>
+          <Std>2.79506</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:31:33 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run40.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:31:36 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212191</Avg>
+          <Std>0.210296</Std>
+          <Max>0.939782</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3556</Avg>
+          <Std>2.79988</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212191</Avg>
+          <Std>0.210296</Std>
+          <Max>0.939782</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3556</Avg>
+          <Std>2.79988</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:33:02 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run41.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:33:04 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211993</Avg>
+          <Std>0.210231</Std>
+          <Max>0.905892</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3581</Avg>
+          <Std>2.80087</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211993</Avg>
+          <Std>0.210231</Std>
+          <Max>0.905892</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3581</Avg>
+          <Std>2.80087</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:34:33 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run42.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:34:36 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212098</Avg>
+          <Std>0.210365</Std>
+          <Max>0.898858</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3522</Avg>
+          <Std>2.80277</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212098</Avg>
+          <Std>0.210365</Std>
+          <Max>0.898858</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3522</Avg>
+          <Std>2.80277</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:36:03 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run43.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:36:06 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211794</Avg>
+          <Std>0.210148</Std>
+          <Max>0.929246</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3568</Avg>
+          <Std>2.80029</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211794</Avg>
+          <Std>0.210148</Std>
+          <Max>0.929246</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3568</Avg>
+          <Std>2.80029</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:37:33 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run44.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:37:35 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211833</Avg>
+          <Std>0.210156</Std>
+          <Max>0.939782</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3535</Avg>
+          <Std>2.80217</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211833</Avg>
+          <Std>0.210156</Std>
+          <Max>0.939782</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3535</Avg>
+          <Std>2.80217</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:39:05 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run45.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:39:07 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211823</Avg>
+          <Std>0.210088</Std>
+          <Max>0.913957</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3591</Avg>
+          <Std>2.80169</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211823</Avg>
+          <Std>0.210088</Std>
+          <Max>0.913957</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3591</Avg>
+          <Std>2.80169</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:40:35 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run46.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:40:37 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21206</Avg>
+          <Std>0.210222</Std>
+          <Max>0.894625</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3557</Avg>
+          <Std>2.79945</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21206</Avg>
+          <Std>0.210222</Std>
+          <Max>0.894625</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3557</Avg>
+          <Std>2.79945</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:42:04 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run47.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:42:07 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212101</Avg>
+          <Std>0.210185</Std>
+          <Max>0.915366</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3556</Avg>
+          <Std>2.80084</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212101</Avg>
+          <Std>0.210185</Std>
+          <Max>0.915366</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3556</Avg>
+          <Std>2.80084</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:43:37 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run48.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:43:39 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212048</Avg>
+          <Std>0.210181</Std>
+          <Max>0.82912</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3545</Avg>
+          <Std>2.80162</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212048</Avg>
+          <Std>0.210181</Std>
+          <Max>0.82912</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3545</Avg>
+          <Std>2.80162</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:45:06 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run49.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:45:08 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212244</Avg>
+          <Std>0.210307</Std>
+          <Max>0.86732</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3603</Avg>
+          <Std>2.79629</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212244</Avg>
+          <Std>0.210307</Std>
+          <Max>0.86732</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3603</Avg>
+          <Std>2.79629</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:46:38 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run50.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:46:41 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21177</Avg>
+          <Std>0.210209</Std>
+          <Max>0.9182</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3594</Avg>
+          <Std>2.79911</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21177</Avg>
+          <Std>0.210209</Std>
+          <Max>0.9182</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3594</Avg>
+          <Std>2.79911</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:48:10 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run51.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:48:13 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212203</Avg>
+          <Std>0.210224</Std>
+          <Max>0.948681</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3551</Avg>
+          <Std>2.80132</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212203</Avg>
+          <Std>0.210224</Std>
+          <Max>0.948681</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3551</Avg>
+          <Std>2.80132</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:49:43 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run52.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:49:45 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21206</Avg>
+          <Std>0.210319</Std>
+          <Max>0.906678</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3596</Avg>
+          <Std>2.7967</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.21206</Avg>
+          <Std>0.210319</Std>
+          <Max>0.906678</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3596</Avg>
+          <Std>2.7967</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:51:14 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run53.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:51:17 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211922</Avg>
+          <Std>0.210123</Std>
+          <Max>0.919607</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3569</Avg>
+          <Std>2.79994</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211922</Avg>
+          <Std>0.210123</Std>
+          <Max>0.919607</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3569</Avg>
+          <Std>2.79994</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:52:48 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run54.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:52:50 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211979</Avg>
+          <Std>0.210219</Std>
+          <Max>0.863663</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3558</Avg>
+          <Std>2.80169</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211979</Avg>
+          <Std>0.210219</Std>
+          <Max>0.863663</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3558</Avg>
+          <Std>2.80169</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:54:17 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run55.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:54:19 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212088</Avg>
+          <Std>0.210245</Std>
+          <Max>0.943146</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3591</Avg>
+          <Std>2.79971</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212088</Avg>
+          <Std>0.210245</Std>
+          <Max>0.943146</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3591</Avg>
+          <Std>2.79971</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:55:45 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run56.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:55:47 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211752</Avg>
+          <Std>0.210244</Std>
+          <Max>0.863663</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3579</Avg>
+          <Std>2.79919</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.211752</Avg>
+          <Std>0.210244</Std>
+          <Max>0.863663</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3579</Avg>
+          <Std>2.79919</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:57:13 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run57.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:57:15 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212111</Avg>
+          <Std>0.210342</Std>
+          <Max>0.943273</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3552</Avg>
+          <Std>2.80071</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.212111</Avg>
+          <Std>0.210342</Std>
+          <Max>0.943273</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>12.3552</Avg>
+          <Std>2.80071</Std>
+          <Max>15</Max>
+          <Min>4</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 17:58:44 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run58.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 17:58:46 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.148663</Avg>
+          <Std>0.216084</Std>
+          <Max>0.981981</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>15</Avg>
+          <Std>0</Std>
+          <Max>15</Max>
+          <Min>15</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.148663</Avg>
+          <Std>0.216084</Std>
+          <Max>0.981981</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>15</Avg>
+          <Std>0</Std>
+          <Max>15</Max>
+          <Min>15</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 18:00:21 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run59.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 18:00:23 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.148603</Avg>
+          <Std>0.215885</Std>
+          <Max>0.964717</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>15</Avg>
+          <Std>0</Std>
+          <Max>15</Max>
+          <Min>15</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.148603</Avg>
+          <Std>0.215885</Std>
+          <Max>0.964717</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>15</Avg>
+          <Std>0</Std>
+          <Max>15</Max>
+          <Min>15</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 18:01:55 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>
+
+Initializing system...
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Beagle version="3.0.3">
+  <Logger>
+    <Log>Open BEAGLE, version 3.0.3</Log>
+    <Log>Console logger initialized, using log level 2 (evolution statistics)</Log>
+    <Log>File logger initialized, using log level 3 (general informations)</Log>
+    <Log>Logging to file named "run60.log"</Log>Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+Loaded configuration with 1 distances...
+
+Performing evolution...
+
+    <Log>Starting an evolution</Log>
+    <Log>Current date and time: 18:01:58 11 Jun 2008</Log>
+    <Log>Evolving generation 0</Log>
+    <Log>
+      <Stats id="deme1" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.148757</Avg>
+          <Std>0.216139</Std>
+          <Max>0.981981</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>15</Avg>
+          <Std>0</Std>
+          <Max>15</Max>
+          <Min>15</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>
+      <Stats id="vivarium" generation="0" popsize="1000000">
+        <Item key="processed">1e+06</Item>
+        <Item key="total-processed">1e+06</Item>
+        <Measure id="fitness">
+          <Avg>0.148757</Avg>
+          <Std>0.216139</Std>
+          <Max>0.981981</Max>
+          <Min>0</Min>
+        </Measure>
+        <Measure id="treedepth">
+          <Avg>4</Avg>
+          <Std>0</Std>
+          <Max>4</Max>
+          <Min>4</Min>
+        </Measure>
+        <Measure id="treesize">
+          <Avg>15</Avg>
+          <Std>0</Std>
+          <Max>15</Max>
+          <Min>15</Min>
+        </Measure>
+      </Stats>
+    </Log>
+    <Log>Current date and time: 18:03:35 11 Jun 2008</Log>
+    <Log>End of evolution</Log>Output written to beagle.log and beagle.obm(.gz)
+Done.
+
+
+  </Logger>
+</Beagle>

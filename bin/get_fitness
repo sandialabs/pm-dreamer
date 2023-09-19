@@ -1,0 +1,15 @@
+#!/bin/tcsh
+
+# Extract best fitnesses out of log files
+
+if ( $#argv < 1) then
+  echo "USAGE: get_fitness log_name1 log_name2 ..."
+  echo "  where log_name1, log_name2, etc specify output log"
+  echo "  file from Open Beagle."
+  exit(1);
+endif
+
+foreach pfile ($argv)
+	echo -n "$pfile:r "
+	sed 's/>Maximum fitness value/Max 1.0/g' $pfile | grep 'Max' | fgrep '.' | sed 's/>/ /g' | sed 's/</ /g' | awk '{print $2}' | sort -n | tail -n 1
+end
